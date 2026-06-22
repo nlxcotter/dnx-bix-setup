@@ -1,0 +1,20 @@
+# OS / editor junk
+.DS_Store
+Thumbs.db
+
+# secrets — never commit (learned the hard way)
+.env
+.env.*
+.npmrc
+*.key
+*.pem
+*-key.txt
+secrets/
+
+# agent / local tooling
+.claude/
+
+# dependencies / build (for the future webapp pull)
+node_modules/
+dist/
+.wrangler/
