@@ -20,6 +20,16 @@
 
 ---
 
+### 2026-06-22 — Comms: `cc` channel + auto-cc-on-storage rule live
+- **Phase·Step:** Phase 1 · Step 1 (coordination infra).
+- **What:** Built agent-to-agent comms — two single-writer outboxes (`airi-outbox.md` GM→PM, `tcs-outbox.md` PM→GM). Commands: **`cc <who>`** (publish), **`read <who>`** (receive). New rule (Cotter): on **any** GM document-storage event, auto-cc the PM to check for relevant updates. Encoded in README + memory.
+- **Why:** kill the copy-paste relay; keep the PM in sync after every GM commit; integrity via single-writer files + the git audit trail.
+- **Decision(s):** GM auto-writes a cc to `airi-outbox.md` on every commit/push; PM reads on its turn. Cotter stays the per-turn trigger (turn-based sessions, no auto-wake).
+- **Lesson / adjustment:** the irreducible human step is `cc`/`read` + a window-flip — far less than clipboarding walls of text.
+- **Artifacts:** `airi-outbox.md`, `tcs-outbox.md`, README conventions; this commit.
+
+---
+
 ### 2026-06-22 — Governance: GM ↔ PM review-before-commit gate
 - **Phase·Step:** Phase 1 · Step 1 (governance).
 - **What:** Cotter formalized the structure — tcs-rebuild = **project manager** (writes/submits, does NOT commit); AIRI = **GM** (reviews via `git diff`, then commits on approval). Encoded in README conventions + memory.
