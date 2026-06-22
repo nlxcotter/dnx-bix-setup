@@ -20,6 +20,16 @@
 
 ---
 
+### 2026-06-22 — Git: nlxsystems AIRI docs repo created (private) — everything now backed up
+- **Phase·Step:** Phase 1 · Step 1 (housekeeping / off-site backup).
+- **What:** Per Cotter's cue, version-controlled the AIRI strategy docs. Created **private** repo `github.com/nlxcotter/nlxsystems-docs`; committed `docs/` (roadmap, strategy, deep-dive spec, scan-questions, phase-0, fulfillment, TCS before-snapshot, bootcamp Day 1–7) — commit `a9e6044`, pushed. Secrets-safe `.gitignore`; **webapp excluded** (own repo).
+- **Why:** the strategy work was Dropbox-only; now version-controlled + off-site. Closes the last "everything committed" gap.
+- **Decision(s):** repo roster — **dnx-bix-setup** (shared record, GM commits) · **nlxsystems-docs** (AIRI strategy, GM commits) · **tcs-home** (TCS product, PM runs git gated by GM review). "Commit AIRI docs" now = commit+push to `nlxsystems-docs`.
+- **Lesson / adjustment:** the nlxsystems webapp stays its own (DashNex) repo — never folded into the docs repo.
+- **Artifacts:** `github.com/nlxcotter/nlxsystems-docs` @ `a9e6044`.
+
+---
+
 ### 2026-06-22 — GM review #1 + git-scope ruling; committed & documented all (Cotter cue)
 - **Phase·Step:** Phase 1 · Step 1 (governance in action).
 - **What:** Per Cotter's "commit + document everything; PMs do the same": GM-reviewed the PM's `tcs-rebuild-cs.md` submission (blog heroes ×17; GM-appointment entry) — clean, approved — and committed it together with the PM's comms `[Q]`, my comms updates, and the README scope fix. Answered the PM's `[Q]` on git authority scope.
