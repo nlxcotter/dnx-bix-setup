@@ -20,6 +20,16 @@
 
 ---
 
+### 2026-06-21 — Git: dnx-biz-setup repo live (first commit + push); AIRI named GM
+- **Phase·Step:** Phase 1 · Step 1 (git setup).
+- **What:** Cotter created the GitHub repo and named AIRI **GM / git manager** of the project. Confirmed **"commit" = both levels** (local + GitHub). I `git init`'d `dnx-biz-setup`, added a **secrets-safe `.gitignore` first**, committed **all** files (incl. the tcs session's `tcs-rebuild-cs.md` baseline entries — "commit all changes even if not yours"), set the remote, and pushed. **Commit `5e16b8e` → `origin/main`.**
+- **Why:** real version control + off-site backup for the capture project; honors the both-levels commit rule.
+- **Decision(s):** AIRI = GM / git manager (commits all lanes); co-author tag omitted per established preference (no AI brand in history).
+- **Lesson / adjustment:** remote repo is named **`dnx-bix-setup`** ("bix" vs the local folder "biz" — cosmetic; flagged to Cotter). Note the `nlxsystems` docs workspace still has no remote.
+- **Artifacts:** `github.com/nlxcotter/dnx-bix-setup` @ `main`, commit `5e16b8e`.
+
+---
+
 ### 2026-06-21 — Commit/push request → no action + new standing logging rule
 - **Phase·Step:** Phase 1 · Step 1 (housekeeping).
 - **What:** Cotter requested a commit + push. Checked git: the **webapp** repo (the connected one, has the GitHub remote) was **untouched this session**; the `nlxsystems` root repo has **no commits + no remote** and `docs/` is untracked; `dnx-biz-setup` is **not a repo**. → **No git action taken.**

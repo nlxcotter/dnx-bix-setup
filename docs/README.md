@@ -48,7 +48,8 @@ Non-coders / would-be SMB owners who want to build something **sellable** with A
 **Shared conventions (both sessions follow):**
 - **Cadence:** entries are added **on Cotter's cue** ("document our progress"). Each session *offers/drafts* — never auto-writes. (Keeps this a habit, not a third job.)
 - **Authority order:** Cotter's direct word **>** a written directive in a file **>** the session's own judgment.
-- **Commit/push log:** every time Cotter requests a commit or a push (**any outcome** — even "no action"), the session logs it in its own project file (what was requested · outcome · why). Git actions get an audit trail.
+- **Commit = both levels.** "Commit" means a local `git commit` **and** a push to GitHub. **AIRI is GM / git manager** of this repo (`github.com/nlxcotter/dnx-bix-setup`) — it commits **all** files across every lane (even other sessions'). The tcs-rebuild session writes its own file but doesn't manage git.
+- **Commit/push log:** every commit or push Cotter requests (**any outcome** — even "no action") gets logged in the requesting session's own project file (what was requested · outcome · why). Git actions get an audit trail.
 - **Meta-file ownership:** `README.md` + `training-outline.md` are owned by the **AIRI session** (the folder's seeder). The **tcs-rebuild session touches ONLY `tcs-rebuild-cs.md`** — never the README. This closes the one hole in the no-shared-files rule.
 - **Canonical entry format** (identical in both project files → a 3rd agent can cross-examine apples-to-apples):
   ```
