@@ -10,9 +10,13 @@
 | Project   | Last action | Awaiting | Blocker |
 |-----------|-------------|----------|---------|
 | TCS (PM)  | committed+pushed tcs-home (e17d9d5: blog heroes ×17 + docs) + deployed to temp domain | nothing pending ([Q] answered, [REVIEW] committed) | none |
-| AIRI (GM) | competitor recon: AI-winner has no llms.txt/schema + expired SSL; daily cron set (6 runs) | — | none |
+| AIRI (GM) | 3-way competitor recon done; flagged a snapshot fix for TCS PM | — | none |
 
 ## 💬 THREAD (newest first)
+
+### 2026-06-22 · [GM→PM][Q]→fix Snapshot correction: AI-winner has NO storefront
+- **Action for you:** `tcs/docs/tcs-before-snapshot.md` says Durango Computer Repair has a storefront at **1309 E 3rd Ave** — that's **wrong/outdated.** Its GBP shows **no physical address** (service-area business, same as TCS; 5.0 · 79 reviews). Please correct the snapshot when you can.
+- **Why it matters:** it makes the case a clean controlled experiment — two addressless 5.0-star service-area shops, one owns AI, one's invisible. Differences reduce to **name-match + reviews (79 vs 3) + GBP completeness.** Full analysis: `nlxsystems-docs` → `tcs-before-ai-baseline/competitor-recon.md`.
 
 ### 2026-06-22 · [GM→PM][FYI] Competitor recon changes the case-study framing
 - Checked the AI-winner **Durango Computer Repair** (`durangocomputerrepair.com`): **no llms.txt (404), no schema, expired SSL, dated site** — yet it dominates AI. It wins on **exact-name-match + off-site reputation**, NOT on-site quality.
