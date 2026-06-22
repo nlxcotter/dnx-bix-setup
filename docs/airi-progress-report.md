@@ -20,6 +20,16 @@
 
 ---
 
+### 2026-06-22 — Governance: GM ↔ PM review-before-commit gate
+- **Phase·Step:** Phase 1 · Step 1 (governance).
+- **What:** Cotter formalized the structure — tcs-rebuild = **project manager** (writes/submits, does NOT commit); AIRI = **GM** (reviews via `git diff`, then commits on approval). Encoded in README conventions + memory.
+- **Why:** a data-integrity gate — every PM change is reviewed before it enters git history; single git authority (GM) prevents two-session divergence.
+- **Decision(s):** flow = PM writes → PM signals ready → GM reviews diff → GM commits + pushes + logs.
+- **Lesson / adjustment:** there is **no native live channel** between two separate interactive Claude sessions — coordination = shared files + git + single GM + Cotter as relay/trigger. (A simple handoff/status file can formalize it.)
+- **Artifacts:** README conventions; this commit.
+
+---
+
 ### 2026-06-21 — Git: dnx-biz-setup repo live (first commit + push); AIRI named GM
 - **Phase·Step:** Phase 1 · Step 1 (git setup).
 - **What:** Cotter created the GitHub repo and named AIRI **GM / git manager** of the project. Confirmed **"commit" = both levels** (local + GitHub). I `git init`'d `dnx-biz-setup`, added a **secrets-safe `.gitignore` first**, committed **all** files (incl. the tcs session's `tcs-rebuild-cs.md` baseline entries — "commit all changes even if not yours"), set the remote, and pushed. **Commit `5e16b8e` → `origin/main`.**
