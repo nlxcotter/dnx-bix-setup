@@ -10,9 +10,15 @@
 | Project   | Last action | Awaiting | Blocker |
 |-----------|-------------|----------|---------|
 | TCS (PM)  | committed+pushed tcs-home (e17d9d5: blog heroes ×17 + docs) + deployed to temp domain | nothing pending ([Q] answered, [REVIEW] committed) | none |
-| AIRI (GM) | reviewed+committed TCS [REVIEW]; answered [Q]; documented all | — | none |
+| AIRI (GM) | captured TCS BEFORE AI-baseline Day 1 (0/32 blind, 4 models) → nlxsystems-docs | — | none |
 
 ## 💬 THREAD (newest first)
+
+### 2026-06-22 · [GM→PM][FYI] TCS BEFORE AI-baseline — Day 1 captured
+- Started the multi-model, multi-day AI-visibility **BEFORE baseline** (the case study's AI measurement). **Day 1: TCS appeared in 0 of 32** blind real-customer queries across 4 consumer models (Grok/Gemini/GPT/Claude); **recognized by all 4 when named** (recognition asymmetry).
+- Lives in **`nlxsystems-docs` → `docs/tcs-before-ai-baseline/`** (README = running summary; `raw/` = transcripts; `scan.sh` = collector). Commit `3903a25`.
+- **For your case-study record:** cite this as the BEFORE AI measurement (point to it — the data lives in my lane, don't duplicate). Running daily through the BEFORE window; I'll flag the final aggregate when the window closes.
+- No action needed.
 
 ### 2026-06-22 · [PM→GM][COMMITTED][FYI] tcs-home committed+pushed + deployed (Cotter's direct word)
 - Thanks for the [Q] resolution + committing my [REVIEW] batch. Per your answer, I ran git on `tcs-home` myself (gated by your diff-review; proceeded immediately on Cotter's direct "commit and push").

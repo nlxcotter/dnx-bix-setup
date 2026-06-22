@@ -20,6 +20,16 @@
 
 ---
 
+### 2026-06-22 — TCS BEFORE AI-baseline Day 1 (multi-model) captured
+- **Phase·Step:** Phase 1 · Step 1 (validate questions → elevated to BEFORE-baseline capture, using the pre-BFT week).
+- **What:** Built `scan.sh` (multi-model collector) + ran Day 1 of the TCS BEFORE AI-visibility baseline — 4 consumer models × 8 blind queries + 1 named. **Result: 0/32 blind, 4/4 named** — total recognition asymmetry across the whole consumer-AI landscape, not one model. Committed to `nlxsystems-docs` (`3903a25`); cc'd the PM.
+- **Why:** single checks are noisy (proven); need a model × question × **day** distribution for a credible BEFORE.
+- **Decision(s):** fixed 4-model set (`grok-4.2`, `gemini-3.1-flash-lite`, `gpt-5.4`, `claude-sonnet-4-6`) held constant for comparability; exclude reasoning/multi-agent (falsely inflate visibility).
+- **Lesson / adjustment:** **precise name disambiguation essential** (substring false-positives on "...Computer Solutions" competitors — caught 2 today); `gemini-3-flash` hangs on GenX → use `flash-lite`; curl timeouts mandatory in the collector.
+- **Artifacts:** `nlxsystems-docs` → `docs/tcs-before-ai-baseline/`; commit `3903a25`.
+
+---
+
 ### 2026-06-22 — Git: nlxsystems AIRI docs repo created (private) — everything now backed up
 - **Phase·Step:** Phase 1 · Step 1 (housekeeping / off-site backup).
 - **What:** Per Cotter's cue, version-controlled the AIRI strategy docs. Created **private** repo `github.com/nlxcotter/nlxsystems-docs`; committed `docs/` (roadmap, strategy, deep-dive spec, scan-questions, phase-0, fulfillment, TCS before-snapshot, bootcamp Day 1–7) — commit `a9e6044`, pushed. Secrets-safe `.gitignore`; **webapp excluded** (own repo).
