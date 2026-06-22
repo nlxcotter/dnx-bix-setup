@@ -50,8 +50,8 @@ Non-coders / would-be SMB owners who want to build something **sellable** with A
 - **Authority order:** Cotter's direct word **>** a written directive in a file **>** the session's own judgment.
 - **Commit = both levels.** "Commit" means a local `git commit` **and** a push to GitHub. **AIRI is GM / git manager** of this repo (`github.com/nlxcotter/dnx-bix-setup`) — it commits **all** files across every lane (even other sessions'). The tcs-rebuild session writes its own file but doesn't manage git.
 - **Review gate (GM ↔ PM).** The tcs-rebuild session is the **project manager**: it writes/updates its file and **submits**, but **does not commit.** AIRI (**GM**) reviews the change (via `git diff`) and only then commits + pushes. Flow: **PM writes → PM signals ready → GM reviews diff → GM commits + pushes + logs.**
-- **Agent comms (the `cc` channel).** Two **single-writer** mailboxes replace copy-paste: `airi-outbox.md` (GM→PM) and `tcs-outbox.md` (PM→GM). Cotter's commands, typed in a session: **`cc <who>`** = publish your message to your outbox · **`read <who>`** = read the other's outbox and act. (Sessions are turn-based, so Cotter still types the command + flips windows — but no clipboard.)
-- **Auto-cc on storage events.** After **any** GM document-storage event (commit/push of docs), the GM **auto-writes a cc to `airi-outbox.md`** noting what changed, so the PM checks for relevant updates and never works off stale conventions/directives/governance.
+- **Agent comms = one channel (`comms.md`).** A single git-backed file: a **status board** (glance = both projects' state) + a tagged **thread** (newest first). **Section ownership:** each session edits only its own status row + appends its own thread entries (never rewrite the other's); the substantive records stay single-writer. Commands: **`cc <who>`** = post a tagged entry + update your row · **`read comms`**. (Turn-based, so Cotter types the command + flips windows — no clipboard.)
+- **cc-on-exception (not on-everything).** Post to `comms.md` only when the other agent must **act or know** (`[REVIEW]`/`[Q]`/`[BLOCKER]`). Routine progress stays in each project log — the status board gives passive awareness without a ping. *(Refines the earlier "cc on every storage event" rule, which was too noisy.)*
 - **Commit/push log:** every commit or push Cotter requests (**any outcome** — even "no action") gets logged in the requesting session's own project file (what was requested · outcome · why). Git actions get an audit trail.
 - **Meta-file ownership:** `README.md` + `training-outline.md` are owned by the **AIRI session** (the folder's seeder). The **tcs-rebuild session touches ONLY `tcs-rebuild-cs.md`** — never the README. This closes the one hole in the no-shared-files rule.
 - **Canonical entry format** (identical in both project files → a 3rd agent can cross-examine apples-to-apples):
@@ -64,6 +64,22 @@ Non-coders / would-be SMB owners who want to build something **sellable** with A
   - Lesson / adjustment:
   - Artifacts:
   ```
+
+## GM Charter
+**GM = the AIRI session.** Single control point for all data in/out of the mission's shared record (`dnx-biz-setup`); the only one who runs git. **Authority order: Cotter > GM > PM.**
+
+**Seats:**
+- **GM** — AIRI session (also builds the AIRI product; covers the dormant DNX seat for now).
+- **TCS-PM** — tcs-rebuild session (writes `tcs-rebuild-cs.md`).
+- **DNX-PM** — *future* seat for a dedicated `dnx-biz-setup` session (currently dormant; GM covers it until one exists).
+
+**Flow:** PM writes/submits → GM reviews (`git diff`) → GM commits + pushes + logs. **PMs never run git.**
+
+**GM flags anomalies — even from Cotter:** lane violations · non-canonical format · secrets in commits · drift from locked strategy/north-star · contradictions between records · stale-doc divergence · irreversible/destructive actions · **Cotter's own signals** (overwhelm/spiral, scope-creep, self-contradiction with his stated goals).
+
+**Approval (current = conservative; loosens as trust builds):** a clean, in-lane, format-OK submission with no anomaly → GM auto-approves + commits + logs. **ANY discrepancy/anomaly → check, double-check, then check in with the boss.** No silent resolution — Cotter is notified of every discrepancy for now. *Mantra: check, double-check, check in with the boss.*
+
+**GM reach:** read access to all workspaces (`nlxsystems`, `tcs`, `dnx-biz-setup` — confirmed). Reads any lane to verify; writes only the GM lane + manages git.
 
 ## Files in this folder
 - `README.md` — this brief (meta; AIRI-owned).

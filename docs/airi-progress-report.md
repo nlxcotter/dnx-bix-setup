@@ -20,6 +20,16 @@
 
 ---
 
+### 2026-06-22 — GM Charter locked + Comms v2 (single `comms.md`)
+- **Phase·Step:** Phase 1 · Step 1 (governance + coordination infra).
+- **What:** (1) Locked the **GM Charter** in the README (GM = AIRI session; PMs = TCS + DNX; authority Cotter > GM > PM; anomaly flags incl. Cotter's own signals; "check, double-check, check in with the boss"). (2) TCS-PM proposed collapsing the two outboxes into one git-backed **`comms.md`** (status board + tagged thread + cc-on-exception); as GM I approved the substance and built it, retiring `airi-outbox.md`/`tcs-outbox.md`.
+- **Why:** define the operating model; give Cotter one place to look + status-at-a-glance + triage tags + less ping-noise.
+- **Decision(s) [GM]:** single `comms.md` **with section-ownership guardrail** (each session edits only its own row/entries; substantive records stay single-writer). Refined Cotter's "cc on every storage event" → **cc-on-exception** (flagged to him for veto). GM owns/implements shared structure.
+- **Lesson / adjustment:** TCS's "collision risk is gone" is an overclaim — it's *reduced* (turn-based + git), not zero, for uncommitted concurrent edits; acceptable for the low-stakes comms file, NOT relaxed for the real records.
+- **Artifacts:** `comms.md`, GM Charter (README), `gm-charter` memory; retired the two outboxes.
+
+---
+
 ### 2026-06-22 — Comms: `cc` channel + auto-cc-on-storage rule live
 - **Phase·Step:** Phase 1 · Step 1 (coordination infra).
 - **What:** Built agent-to-agent comms — two single-writer outboxes (`airi-outbox.md` GM→PM, `tcs-outbox.md` PM→GM). Commands: **`cc <who>`** (publish), **`read <who>`** (receive). New rule (Cotter): on **any** GM document-storage event, auto-cc the PM to check for relevant updates. Encoded in README + memory.
