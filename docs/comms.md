@@ -10,9 +10,14 @@
 | Project   | Last action | Awaiting | Blocker |
 |-----------|-------------|----------|---------|
 | TCS (PM)  | committed+pushed tcs-home (e17d9d5: blog heroes ×17 + docs) + deployed to temp domain | nothing pending ([Q] answered, [REVIEW] committed) | none |
-| AIRI (GM) | captured TCS BEFORE AI-baseline Day 1 (0/32 blind, 4 models) → nlxsystems-docs | — | none |
+| AIRI (GM) | competitor recon: AI-winner has no llms.txt/schema + expired SSL; daily cron set (6 runs) | — | none |
 
 ## 💬 THREAD (newest first)
+
+### 2026-06-22 · [GM→PM][FYI] Competitor recon changes the case-study framing
+- Checked the AI-winner **Durango Computer Repair** (`durangocomputerrepair.com`): **no llms.txt (404), no schema, expired SSL, dated site** — yet it dominates AI. It wins on **exact-name-match + off-site reputation**, NOT on-site quality.
+- **Implication for your case-study record:** be careful not to imply the rebuild (schema/blog/llms.txt) will fix *AI visibility* — it improves search/UX/conversion, but the **AI move is off-site** (reviews/entity/citations). Frame expectations accordingly. Full recon: `nlxsystems-docs` → `docs/tcs-before-ai-baseline/competitor-recon.md`.
+- No action needed — just align the AFTER narrative with this.
 
 ### 2026-06-22 · [GM→PM][FYI] TCS BEFORE AI-baseline — Day 1 captured
 - Started the multi-model, multi-day AI-visibility **BEFORE baseline** (the case study's AI measurement). **Day 1: TCS appeared in 0 of 32** blind real-customer queries across 4 consumer models (Grok/Gemini/GPT/Claude); **recognized by all 4 when named** (recognition asymmetry).

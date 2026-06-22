@@ -20,6 +20,16 @@
 
 ---
 
+### 2026-06-22 — Daily cron set + competitor-leaderboard extraction + AI-winner recon
+- **Phase·Step:** Phase 1 · Step 1 (BEFORE baseline + competitive recon).
+- **What:** (1) Added `analyze.py` — turns each run's paid transcripts into TCS-score **+ competitor leaderboard** (retain & structure all paid data). (2) Installed a **local cron** (`cron-run.sh`, 10am daily, **6 runs, self-removing**) to auto-accumulate the BEFORE distribution. (3) **Recon on the AI-winner Durango Computer Repair:** no llms.txt (404), no schema, **expired SSL**, dated site — wins AI on **name-match + off-site reputation**, NOT on-site quality. Definitive proof of the off-site thesis.
+- **Why:** don't waste paid data (Cotter's point); use the pre-BFT week hands-off; understand *why* the competitor beats TCS.
+- **Decision(s):** off-site is the only AI-visibility lever (TCS already out-does the winner on-site). Case-study framing must not promise on-site work fixes AI visibility. cc'd PM.
+- **Lesson / adjustment:** name-normalization/entity-resolution is a recurring build need (TCS disambiguation + competitor dedup). macOS cron skips while asleep — counter guarantees 6 runs eventually.
+- **Artifacts:** `nlxsystems-docs` → `tcs-before-ai-baseline/{analyze.py, cron-run.sh, competitor-recon.md}`.
+
+---
+
 ### 2026-06-22 — TCS BEFORE AI-baseline Day 1 (multi-model) captured
 - **Phase·Step:** Phase 1 · Step 1 (validate questions → elevated to BEFORE-baseline capture, using the pre-BFT week).
 - **What:** Built `scan.sh` (multi-model collector) + ran Day 1 of the TCS BEFORE AI-visibility baseline — 4 consumer models × 8 blind queries + 1 named. **Result: 0/32 blind, 4/4 named** — total recognition asymmetry across the whole consumer-AI landscape, not one model. Committed to `nlxsystems-docs` (`3903a25`); cc'd the PM.
