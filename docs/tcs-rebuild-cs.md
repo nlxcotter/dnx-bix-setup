@@ -106,5 +106,21 @@
 - Lesson / adjustment: For a solo non-coder, collapsing "commit + push to GitHub" into one habit keeps work always backed up off-site without a second step to remember — the simplest safe model. (Training point: version control + off-site backup is foundational, not optional.)
 - Artifacts: git remote `origin` → `tcs-home`; commits `210792b`, `cc94546`.
 
+### 2026-06-21 — Blog heroes restored across all 17 posts
+- Phase·Step: Rebuild / media
+- What: Every blog post now has a WebP hero. During the deploy slim (11M→1.5M `public/site`, HTTP-413 fix) the blog heroes were stripped and only one was re-added; the rest sat text-only behind a deferral that an imprecise note had mislabeled as image "corruption." Mapped each post to a best-fit source, converted PNG/JPG → WebP with `sharp` (macOS `sips` can't write WebP), and wired the standard image pattern. `public/site` 1.5M→2.2M.
+- Why: Heroes improve scannability, social/OG cards, and `BlogPosting` schema `image` (an AEO signal) — and the posts looked unfinished without them.
+- Decision(s): Convert via `sharp` at q82, max-1200w; name files by slug; pick content images over OG social cards where possible.
+- Lesson / adjustment: A vague TODO note can disguise a trivial task as a scary one for weeks. Write notes precisely, or they cost you later. (Training point.)
+- Artifacts: `public/site/blog/*.webp`, 17 blog `page.tsx` files.
+
+### 2026-06-21 — Org structure: AIRI appointed GM (review-before-commit)
+- Phase·Step: Process / governance
+- What: Cotter appointed the AIRI session as **General Manager** overseeing this TCS **project-manager** session. New rule: work + docs are submitted to the shared `dnx-biz-setup/docs` folder and reviewed by AIRI before any commit; nothing commits without GM approval.
+- Why: A second, independent agent reviewing before changes lock into git protects data integrity and quality.
+- Decision(s): Commit flow gains an approval step — prepare → submit for AIRI review → APPROVED → commit (local + GitHub + docs). Cotter's direct word still overrides. Channel: shared files + a review ledger (optionally git-tracked for a checksummed audit trail).
+- Lesson / adjustment: Multi-agent work needs an explicit handoff/approval protocol; the shared-folder + ledger is the integrity layer (the earlier manual-courier paste garble shows why a durable channel beats copy-paste).
+- Artifacts: memory `terminology-commit-push`, `dnx-biz-setup-case-study`; `build-progress.md`; this file.
+
 ---
 *Next milestones (not yet done): DashNex sender config so forms deliver → domain/email cutover (flip `SITE.indexable`) → off-site AEO treatment → AFTER measurement (snapshot §10) → publish.*

@@ -20,6 +20,16 @@
 
 ---
 
+### 2026-06-22 — GM review #1 + git-scope ruling; committed & documented all (Cotter cue)
+- **Phase·Step:** Phase 1 · Step 1 (governance in action).
+- **What:** Per Cotter's "commit + document everything; PMs do the same": GM-reviewed the PM's `tcs-rebuild-cs.md` submission (blog heroes ×17; GM-appointment entry) — clean, approved — and committed it together with the PM's comms `[Q]`, my comms updates, and the README scope fix. Answered the PM's `[Q]` on git authority scope.
+- **Why:** Cotter's direct commit cue; first full exercise of the review gate + first GM ruling.
+- **Decision(s) [GM, per authority order Cotter > Charter]:** shared `dnx-biz-setup` repo → **GM commits**; a PM's OWN product repo (`tcs-home`) → **the PM runs git, gated by GM diff-review**. Scoped the Charter's "PMs never run git" to the shared record. Flagged to Cotter for veto.
+- **Lesson / adjustment:** governance held — the PM flagged the ambiguity via `[Q]` instead of assuming (the mantra working in both directions).
+- **Artifacts:** this commit; `tcs-rebuild-cs.md` (PM); `comms.md`; README charter.
+
+---
+
 ### 2026-06-22 — GM Charter locked + Comms v2 (single `comms.md`)
 - **Phase·Step:** Phase 1 · Step 1 (governance + coordination infra).
 - **What:** (1) Locked the **GM Charter** in the README (GM = AIRI session; PMs = TCS + DNX; authority Cotter > GM > PM; anomaly flags incl. Cotter's own signals; "check, double-check, check in with the boss"). (2) TCS-PM proposed collapsing the two outboxes into one git-backed **`comms.md`** (status board + tagged thread + cc-on-exception); as GM I approved the substance and built it, retiring `airi-outbox.md`/`tcs-outbox.md`.

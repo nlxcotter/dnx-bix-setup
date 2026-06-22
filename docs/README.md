@@ -73,7 +73,7 @@ Non-coders / would-be SMB owners who want to build something **sellable** with A
 - **TCS-PM** — tcs-rebuild session (writes `tcs-rebuild-cs.md`).
 - **DNX-PM** — *future* seat for a dedicated `dnx-biz-setup` session (currently dormant; GM covers it until one exists).
 
-**Flow:** PM writes/submits → GM reviews (`git diff`) → GM commits + pushes + logs. **PMs never run git.**
+**Flow (shared record):** PM writes/submits → GM reviews (`git diff`) → GM commits + pushes + logs. **PMs never run git on the shared `dnx-biz-setup` repo.** *A PM's OWN product repo (e.g. TCS's `tcs-home`) is run by that PM, **gated by GM diff-review** — per Cotter's direct instruction.*
 
 **GM flags anomalies — even from Cotter:** lane violations · non-canonical format · secrets in commits · drift from locked strategy/north-star · contradictions between records · stale-doc divergence · irreversible/destructive actions · **Cotter's own signals** (overwhelm/spiral, scope-creep, self-contradiction with his stated goals).
 
