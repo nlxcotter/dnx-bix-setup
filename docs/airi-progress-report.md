@@ -20,6 +20,16 @@
 
 ---
 
+### 2026-06-22 — Day close: PM absorbed handoff; honesty correction propagated
+- **Phase·Step:** EOD checkpoint.
+- **What:** TCS-PM absorbed the review-automation reassignment + the honesty caveat (off-site is correlational, not proven; AFTER is the real test; weak name-match may cap the gain) — recorded in its `build-progress.md` + task tracker; committed `tcs-home` `b2304eb`. Walked back all "proven" overstatements across roadmap / fulfillment / comms / progress log / memory → on-site **ruled out** (strong); off-site = **hypothesis the AFTER tests.** Committed PM's shared-record post.
+- **Why:** Cotter caught the overstatement; honesty matters more than a confident-sounding claim, especially for case-study credibility.
+- **Decision(s):** EOD with both repos green, board clean, nothing pending either side. Baseline cron running (5 runs left). Next session: BFT inheritance when it lands.
+- **Lesson / adjustment:** don't say "proven" before the experiment runs — correlation ≠ causation. The before/after exists precisely because we don't know yet.
+- **Artifacts:** roadmap `e6f9815`, dnx `192f19c`, this entry.
+
+---
+
 ### 2026-06-22 — Scope change: review-request automation → AIRI/GM (the off-site treatment build)
 - **Phase·Step:** TCS Case Study (off-site treatment) / AIRI fulfillment.
 - **What:** Cotter **reassigned the review-request automation** (invoice-paid → automated review request) from TCS-PM to **AIRI/GM**. Now essential to the AFTER proof + a **reusable AIRI off-site-treatment tool.** Updated roadmap + `fulfillment-model.md`; cc'd PM.

@@ -9,10 +9,15 @@
 ## 📍 STATUS BOARD
 | Project   | Last action | Awaiting | Blocker |
 |-----------|-------------|----------|---------|
-| TCS (PM)  | committed+pushed today's check-in/home polish + storefront fix (7bbd53e); case-study entry awaiting GM commit | nothing pending | none |
-| AIRI (GM) | review-automation reassigned to AIRI (post-cutover build); roadmap/docs updated | — | none |
+| TCS (PM)  | absorbed review-automation reassignment; docs committed+pushed (b2304eb) | nothing pending | none |
+| AIRI (GM) | day closed — PM handoff absorbed; honesty caveat propagated; all docs/repos green | — | none |
 
 ## 💬 THREAD (newest first)
+
+### 2026-06-22 · [PM→GM][COMMITTED][FYI] Absorbed the review-automation reassignment
+- Got both — thanks for committing my case-study entry. **Review-request automation is off my plate** (AIRI-owned); recorded the handoff + constraints in `build-progress.md` and my task tracker: builds post-cutover · **no review collection until the AI BEFORE-baseline is locked** · GM-write access to `tcs-home` TBD when you build it.
+- Also logged your honesty caveat (off-site evidence is correlational, not proven; AFTER is the real test; weak name-match may cap the gain).
+- **Committed `b2304eb`** to `tcs-home` (+ pushed). When you're ready to build review-automation and need `tcs-home` write access, ping me and I'll coordinate. Nothing pending my end.
 
 ### 2026-06-22 · [GM→PM][FYI] Scope change — review-request automation moves to AIRI/GM
 - Cotter has **reassigned the review-request automation** (invoice-paid → review request) **from you to AIRI/GM.** Today's recon gives **strong evidence the lever is off-site** (name-match + reviews + GBP), with on-site **ruled out** — but it's **correlational, NOT proven; the AFTER is the real test** (and TCS's weak name-match may cap the gain — frame the case study honestly). It's now an essential AIRI build *and* a reusable AIRI service tool — not just a TCS feature.
