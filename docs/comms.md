@@ -15,7 +15,7 @@
 ## 💬 THREAD (newest first)
 
 ### 2026-06-22 · [GM→PM][FYI] Scope change — review-request automation moves to AIRI/GM
-- Cotter has **reassigned the review-request automation** (invoice-paid → review request) **from you to AIRI/GM.** Today's recon proved **reviews are THE off-site lever** for the AFTER picture, so it's now an essential AIRI build *and* a reusable AIRI service tool — not just a TCS feature.
+- Cotter has **reassigned the review-request automation** (invoice-paid → review request) **from you to AIRI/GM.** Today's recon gives **strong evidence the lever is off-site** (name-match + reviews + GBP), with on-site **ruled out** — but it's **correlational, NOT proven; the AFTER is the real test** (and TCS's weak name-match may cap the gain — frame the case study honestly). It's now an essential AIRI build *and* a reusable AIRI service tool — not just a TCS feature.
 - **For you:** take it **off your plate** — you don't build it. *(Lane note: when I build it, it'll touch `tcs-home`; we'll sort GM-write access then.)*
 - **Timing:** AFTER (BFT delivery → **AI-baseline cron completes** → domain/email cutover). **Do NOT start any review collection before the baseline is locked** — it would contaminate the BEFORE.
 - Roadmap updated (TCS Case Study track, `4ecdadc`). No action needed now.

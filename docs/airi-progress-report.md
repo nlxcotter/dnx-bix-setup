@@ -23,7 +23,7 @@
 ### 2026-06-22 — Scope change: review-request automation → AIRI/GM (the off-site treatment build)
 - **Phase·Step:** TCS Case Study (off-site treatment) / AIRI fulfillment.
 - **What:** Cotter **reassigned the review-request automation** (invoice-paid → automated review request) from TCS-PM to **AIRI/GM**. Now essential to the AFTER proof + a **reusable AIRI off-site-treatment tool.** Updated roadmap + `fulfillment-model.md`; cc'd PM.
-- **Why:** today's recon proved **reviews are THE AI lever** (TCS has 3 vs competitors' 63–855).
+- **Why:** today's recon **strongly indicates** off-site (reviews/GBP/name-match) is the lever — on-site **ruled out** (correlational; the AFTER tests it). TCS has 3 reviews vs competitors' 63–855.
 - **Decision(s):** AIRI/GM builds it, sequenced **after** BFT → AI-baseline cron complete → cutover. **Don't start review collection before the baseline** (contaminates BEFORE). AFTER is a slow-burn (weeks–months accumulation before re-measure).
 - **Lesson / adjustment:** the case-study *treatment* and the AIRI product *fulfillment* converge on review automation — build once, use twice.
 - **Artifacts:** `nlxsystems-docs` roadmap `4ecdadc` + `fulfillment-model.md`.
@@ -32,9 +32,9 @@
 
 ### 2026-06-22 — END OF DAY: Step 1 complete + BEFORE baseline + 6-business recon + PM sync
 - **Phase·Step:** Phase 1 · Step 1 **COMPLETE**.
-- **What (full-day review):** Stood up governance + 3 git repos (GM model). Captured TCS BEFORE AI-baseline Day 1 (**0/32 blind, 4/4 named**) + daily cron (6 runs) + `analyze.py` competitor leaderboard. Completed **6-business competitor recon** (Durango CR, Affordable, Dr. Joel, Tech-Nichol, Mac Ranch vs TCS) → off-site thesis proven. Fixed storefront error in AIRI-lane snapshot (`942b27e`); answered PM `[Q]`s; **reviewed + committed the PM's case-study entry** ("AI-win-is-off-site reframing"). Updated roadmap YOU-ARE-HERE + TCS baseline.
+- **What (full-day review):** Stood up governance + 3 git repos (GM model). Captured TCS BEFORE AI-baseline Day 1 (**0/32 blind, 4/4 named**) + daily cron (6 runs) + `analyze.py` competitor leaderboard. Completed **6-business competitor recon** (Durango CR, Affordable, Dr. Joel, Tech-Nichol, Mac Ranch vs TCS) → on-site **ruled out** as the lever; off-site = leading hypothesis (correlational, not proven — AFTER tests it). Fixed storefront error in AIRI-lane snapshot (`942b27e`); answered PM `[Q]`s; **reviewed + committed the PM's case-study entry** ("AI-win-is-off-site reframing"). Updated roadmap YOU-ARE-HERE + TCS baseline.
 - **Why:** use the pre-BFT week to lock the BEFORE measurement + the competitive proof; keep all docs current.
-- **Decision(s):** AI levers = **name-match + reviews + GBP** (on-site irrelevant, proven 6 ways); Step 1 done; next = **BFT inheritance** (Steps 2+: clone → read the seam → build).
+- **Decision(s):** leading AI-lever hypothesis = **name-match + reviews + GBP** (on-site ruled out across 6 businesses; the AFTER experiment tests it — not proven); Step 1 done; next = **BFT inheritance** (Steps 2+: clone → read the seam → build).
 - **Lesson / adjustment:** Mac Ranch refined the thesis (schema neither necessary nor sufficient). The review-gate caught a real GM error (wrong snapshot path) via the PM's `[Q]` — governance working both directions.
 - **Artifacts:** `nlxsystems-docs` (roadmap `57736eb`, `tcs-before-ai-baseline/`, snapshot fix `942b27e`); `dnx` (PM case-study entry committed).
 
