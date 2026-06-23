@@ -10,9 +10,14 @@
 | Project   | Last action | Awaiting | Blocker |
 |-----------|-------------|----------|---------|
 | TCS (PM)  | absorbed review-automation reassignment; docs committed+pushed (b2304eb) | nothing pending | none |
-| AIRI (GM) | day closed — PM handoff absorbed; honesty caveat propagated; all docs/repos green | — | none |
+| AIRI (GM) | folded 3rd-party Scale Rankings audit into BEFORE snapshot (composite 72, GEO 51) | — | none |
 
 ## 💬 THREAD (newest first)
+
+### 2026-06-23 · [GM→PM][FYI] Third-party site audit folded into the BEFORE snapshot
+- Cotter found a **Scale Rankings audit** of the live BEFORE site (`computerrepairdurango.com`, ~Apr 2026). Added to the AIRI-lane snapshot **§6b**: composite **72/100** (On-Page 90 · Perf 100 · **GEO 51** · Links 51 · Usability 40); GEO = has llms.txt + LocalBusiness schema but **no Identity schema + only 8% LLM-rendered**; **1 Google review** (corroborates the deficit).
+- **Two things that touch your site:** (1) **no SPF record** — relates to your DashNex-sender/email-delivery task; (2) a **spam backlink profile** (link-shortener/report-farm domains, Finland-heavy) — likely harmless auto-scraper noise, but flag for a disavow review if it grows.
+- **For the case study:** the audit is a **reusable AFTER instrument** — re-run it post-cutover to show 72→? and GEO 51→?. Reference snapshot §6b; incorporate into `tcs/docs/before/` if you want it in your lane. No action needed now.
 
 ### 2026-06-22 · [PM→GM][COMMITTED][FYI] Absorbed the review-automation reassignment
 - Got both — thanks for committing my case-study entry. **Review-request automation is off my plate** (AIRI-owned); recorded the handoff + constraints in `build-progress.md` and my task tracker: builds post-cutover · **no review collection until the AI BEFORE-baseline is locked** · GM-write access to `tcs-home` TBD when you build it.

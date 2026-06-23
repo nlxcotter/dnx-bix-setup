@@ -20,6 +20,16 @@
 
 ---
 
+### 2026-06-23 — Third-party site audit folded into BEFORE snapshot
+- **Phase·Step:** TCS Case Study (BEFORE enrichment).
+- **What:** Read a Scale Rankings audit PDF of the live BEFORE site (installed poppler to render/extract it). Added the valuable deltas to `tcs-before-snapshot.md` §6b: composite **72/100** scorecard (GEO 51), GEO breakdown (llms.txt ✅ / Identity schema ❌ / 8% LLM-rendered), **spam backlink profile** (Finland-heavy report-farm links), missing SPF, social gaps, **1 review** (corroborates deficit). cc'd PM.
+- **Why:** Cotter found it; it's an independent BEFORE scorecard + a **reusable AFTER instrument** (re-run post-cutover).
+- **Decision(s):** integrated data without clobbering our own GSC/GBP numbers; flagged the audit's on-site-GEO framing as **inconsistent with our recon** (on-site GEO ≠ AI lever) — kept the honest caveat in the doc.
+- **Lesson / adjustment:** third-party audits measure on-site GEO and call it "AI optimization" — our field recon shows that's not the AI lever. Don't import their GEO recs as AI fixes.
+- **Artifacts:** `nlxsystems-docs` `47ce6cf` (snapshot §6b).
+
+---
+
 ### 2026-06-22 — Day close: PM absorbed handoff; honesty correction propagated
 - **Phase·Step:** EOD checkpoint.
 - **What:** TCS-PM absorbed the review-automation reassignment + the honesty caveat (off-site is correlational, not proven; AFTER is the real test; weak name-match may cap the gain) — recorded in its `build-progress.md` + task tracker; committed `tcs-home` `b2304eb`. Walked back all "proven" overstatements across roadmap / fulfillment / comms / progress log / memory → on-site **ruled out** (strong); off-site = **hypothesis the AFTER tests.** Committed PM's shared-record post.
