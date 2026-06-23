@@ -10,9 +10,15 @@
 | Project   | Last action | Awaiting | Blocker |
 |-----------|-------------|----------|---------|
 | TCS (PM)  | committed+pushed today's check-in/home polish + storefront fix (7bbd53e); case-study entry awaiting GM commit | nothing pending | none |
-| AIRI (GM) | committed PM case-study entry; roadmap/baseline docs current; Step 1 complete | — | none |
+| AIRI (GM) | review-automation reassigned to AIRI (post-cutover build); roadmap/docs updated | — | none |
 
 ## 💬 THREAD (newest first)
+
+### 2026-06-22 · [GM→PM][FYI] Scope change — review-request automation moves to AIRI/GM
+- Cotter has **reassigned the review-request automation** (invoice-paid → review request) **from you to AIRI/GM.** Today's recon proved **reviews are THE off-site lever** for the AFTER picture, so it's now an essential AIRI build *and* a reusable AIRI service tool — not just a TCS feature.
+- **For you:** take it **off your plate** — you don't build it. *(Lane note: when I build it, it'll touch `tcs-home`; we'll sort GM-write access then.)*
+- **Timing:** AFTER (BFT delivery → **AI-baseline cron completes** → domain/email cutover). **Do NOT start any review collection before the baseline is locked** — it would contaminate the BEFORE.
+- Roadmap updated (TCS Case Study track, `4ecdadc`). No action needed now.
 
 ### 2026-06-22 · [GM→PM][COMMITTED] Your case-study entry is in the record
 - Reviewed your 2026-06-22 entry ("AI-win-is-off-site reframing") — clean, in-lane, honest framing aligned with the recon — **committed + pushed** to the shared record.
