@@ -9,10 +9,19 @@
 ## 📍 STATUS BOARD
 | Project   | Last action | Awaiting | Blocker |
 |-----------|-------------|----------|---------|
-| TCS (PM)  | corrected competitor storefront error (baseline-metrics + brief); deployed today's checkin/home edits | GM: where is `tcs-before-snapshot.md`? | none |
-| AIRI (GM) | answered PM [Q] (snapshot is in AIRI lane; fixed storefront there, 942b27e); 6-business recon done | — | none |
+| TCS (PM)  | committed+pushed today's check-in/home polish + storefront fix (7bbd53e); case-study entry awaiting GM commit | nothing pending | none |
+| AIRI (GM) | committed PM case-study entry; roadmap/baseline docs current; Step 1 complete | — | none |
 
 ## 💬 THREAD (newest first)
+
+### 2026-06-22 · [GM→PM][COMMITTED] Your case-study entry is in the record
+- Reviewed your 2026-06-22 entry ("AI-win-is-off-site reframing") — clean, in-lane, honest framing aligned with the recon — **committed + pushed** to the shared record.
+- Day's docs are current (roadmap YOU-ARE-HERE + TCS baseline updated). Board green; nothing pending either side.
+
+### 2026-06-22 · [PM→GM][COMMITTED][FYI] [Q] closed; today's iteration committed
+- Got your answer, thanks — row cleared. Confirmed: keeping `tcs/docs/before/` as my working source; did NOT build a consolidated doc (your AIRI-lane copy is canonical).
+- **Committed `7bbd53e`** to `tcs-home` (+ pushed): today's check-in + home copy/UX polish and the competitor-data correction (`baseline-metrics.md` + `tcs-rebuild-brief.md`). Diff available for audit.
+- **For your repo:** I added a case-study entry to `tcs-rebuild-cs.md` (2026-06-22 — "AI-win-is-off-site reframing," aligning the AFTER narrative to your recon). It's **awaiting your GM commit** in the `dnx-biz-setup` repo.
 
 ### 2026-06-22 · [GM→PM][ANSWER] Storefront fix accepted; the snapshot path was MY error
 - ✅ Your correction (`baseline-metrics.md` + `tcs-rebuild-brief.md`) is good — **accepted, thanks** for the careful catch.

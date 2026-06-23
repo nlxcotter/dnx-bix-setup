@@ -122,5 +122,13 @@
 - Lesson / adjustment: Multi-agent work needs an explicit handoff/approval protocol; the shared-folder + ledger is the integrity layer (the earlier manual-courier paste garble shows why a durable channel beats copy-paste).
 - Artifacts: memory `terminology-commit-push`, `dnx-biz-setup-case-study`; `build-progress.md`; this file.
 
+### 2026-06-22 — Copy/UX iteration + the AI-win-is-off-site reframing
+- Phase·Step: Rebuild / iteration + measurement framing
+- What: Owner-driven check-in + home polish (intake: removed all "(optional)" tags, made "how did you hear about us" required client+server, dropped the in-person-login opt-out and the "Prefer to call?" tile, added repair step 05, header-matched layout strip; home: "We come to you" box → "Mobile Service Options," CTA/footer → "Mobile Service in Durango"). Deployed to temp domain. Separately corrected the competitor record after GM recon: Durango Computer Repair (the AI-search winner) is a service-area business with NO storefront (was wrongly listed at 1309 E 3rd Ave), 5.0 · 79 reviews.
+- Why: Tighten conversion copy and make the referral metric reliable for tracking; and the case study's controlled-experiment framing depends on accurate competitor data.
+- Decision(s): GM recon showed the AI-search winner ranks on **exact-name-match + off-site reputation**, NOT on-site signals (it has no llms.txt/schema and an expired SSL). So the AFTER narrative must stay honest: the rebuild lifts search/UX/conversion; the **AI lever is off-site** (reviews/entity/citations — review generation is highest-leverage). BEFORE AI baseline (0/32 blind, recognized-when-named) lives in the AIRI lane — cite, don't duplicate.
+- Lesson / adjustment: A strong on-site rebuild is **necessary but not sufficient** for AI visibility; entity + reputation dominate. Don't over-promise the rebuild's AI impact — the biggest training takeaway of the whole case study so far.
+- Artifacts: check-in/home edits (`tcs-home`); `before/baseline-metrics.md` + `tcs-rebuild-brief.md` corrections; points to `nlxsystems-docs` → `docs/tcs-before-ai-baseline/` + `competitor-recon.md`.
+
 ---
 *Next milestones (not yet done): DashNex sender config so forms deliver → domain/email cutover (flip `SITE.indexable`) → off-site AEO treatment → AFTER measurement (snapshot §10) → publish.*

@@ -20,6 +20,16 @@
 
 ---
 
+### 2026-06-22 — END OF DAY: Step 1 complete + BEFORE baseline + 6-business recon + PM sync
+- **Phase·Step:** Phase 1 · Step 1 **COMPLETE**.
+- **What (full-day review):** Stood up governance + 3 git repos (GM model). Captured TCS BEFORE AI-baseline Day 1 (**0/32 blind, 4/4 named**) + daily cron (6 runs) + `analyze.py` competitor leaderboard. Completed **6-business competitor recon** (Durango CR, Affordable, Dr. Joel, Tech-Nichol, Mac Ranch vs TCS) → off-site thesis proven. Fixed storefront error in AIRI-lane snapshot (`942b27e`); answered PM `[Q]`s; **reviewed + committed the PM's case-study entry** ("AI-win-is-off-site reframing"). Updated roadmap YOU-ARE-HERE + TCS baseline.
+- **Why:** use the pre-BFT week to lock the BEFORE measurement + the competitive proof; keep all docs current.
+- **Decision(s):** AI levers = **name-match + reviews + GBP** (on-site irrelevant, proven 6 ways); Step 1 done; next = **BFT inheritance** (Steps 2+: clone → read the seam → build).
+- **Lesson / adjustment:** Mac Ranch refined the thesis (schema neither necessary nor sufficient). The review-gate caught a real GM error (wrong snapshot path) via the PM's `[Q]` — governance working both directions.
+- **Artifacts:** `nlxsystems-docs` (roadmap `57736eb`, `tcs-before-ai-baseline/`, snapshot fix `942b27e`); `dnx` (PM case-study entry committed).
+
+---
+
 ### 2026-06-22 — Daily cron set + competitor-leaderboard extraction + AI-winner recon
 - **Phase·Step:** Phase 1 · Step 1 (BEFORE baseline + competitive recon).
 - **What:** (1) Added `analyze.py` — turns each run's paid transcripts into TCS-score **+ competitor leaderboard** (retain & structure all paid data). (2) Installed a **local cron** (`cron-run.sh`, 10am daily, **6 runs, self-removing**) to auto-accumulate the BEFORE distribution. (3) **Recon on the AI-winner Durango Computer Repair:** no llms.txt (404), no schema, **expired SSL**, dated site — wins AI on **name-match + off-site reputation**, NOT on-site quality. Definitive proof of the off-site thesis.
