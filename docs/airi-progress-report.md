@@ -20,6 +20,16 @@
 
 ---
 
+### 2026-06-24 — Treatment's manual phase started (reviews 3→5+) + cron Days 2–3
+- **Phase·Step:** TCS Case Study (measurement).
+- **What:** Cron BEFORE-baseline Days 2–3 in (both **0/32 blind, 4/4 named** — stable; 0/96 cumulative). Cotter began **manually soliciting past clients for reviews** (count ~3 → 5+) → the **off-site treatment's MANUAL phase has started.** Updated baseline measurement note + roadmap TCS track; committed PM's 2 case-study entries (incl. its absorption of the scope/two-layer correction).
+- **Why:** reviews are the lever we diagnosed; Cotter going to get them is correct — but it means the treatment has effectively begun.
+- **Decision(s):** **treatment-start ≈ mid-June; AFTER period effectively begins now.** AI baseline still safe to finish (reviews lag AI by weeks → cron stays 0/32). Track the **review timeline**. Attribution: AIRI = diagnosis + automation; manual reviews prove the lever, automation proves scale. Burst = one-time backlog (don't extrapolate).
+- **Lesson / adjustment:** the clean BEFORE→treatment→AFTER line moved earlier than planned because the owner (rightly) acted on the diagnosis; honest framing > a tidy timeline.
+- **Artifacts:** `nlxsystems-docs` `ca0f3c6` (roadmap + baseline note), cron Days 2–3 `91c6d00`.
+
+---
+
 ### 2026-06-24 — Honesty correction: scope (n=1) + two-layer model (Cotter critique)
 - **Phase·Step:** framing correction (epistemics).
 - **What:** Cotter flagged two overstatements: (a) generalizing an n=1/one-market case study to a universal law; (b) over-dismissing on-site GEO. Corrected across `competitor-recon.md` (scope/epistemics header + layered conclusions), snapshot §6b, roadmap, `airi-strategy.md` §2, deep-dive spec (added **Layer-2 finding H — representation accuracy**), `fulfillment-model.md`, memory. cc'd PM.

@@ -126,8 +126,8 @@
 - Phase·Step: Rebuild / iteration + measurement framing
 - What: Owner-driven check-in + home polish (intake: removed all "(optional)" tags, made "how did you hear about us" required client+server, dropped the in-person-login opt-out and the "Prefer to call?" tile, added repair step 05, header-matched layout strip; home: "We come to you" box → "Mobile Service Options," CTA/footer → "Mobile Service in Durango"). Deployed to temp domain. Separately corrected the competitor record after GM recon: Durango Computer Repair (the AI-search winner) is a service-area business with NO storefront (was wrongly listed at 1309 E 3rd Ave), 5.0 · 79 reviews.
 - Why: Tighten conversion copy and make the referral metric reliable for tracking; and the case study's controlled-experiment framing depends on accurate competitor data.
-- Decision(s): GM recon showed the AI-search winner ranks on **exact-name-match + off-site reputation**, NOT on-site signals (it has no llms.txt/schema and an expired SSL). So the AFTER narrative must stay honest: the rebuild lifts search/UX/conversion; the **AI lever is off-site** (reviews/entity/citations — review generation is highest-leverage). BEFORE AI baseline (0/32 blind, recognized-when-named) lives in the AIRI lane — cite, don't duplicate.
-- Lesson / adjustment: A strong on-site rebuild is **necessary but not sufficient** for AI visibility; entity + reputation dominate. Don't over-promise the rebuild's AI impact — the biggest training takeaway of the whole case study so far.
+- Decision(s): GM recon (Durango Computer Repair, one market, **n=1 observational — a proof-of-concept for TCS's situation, NOT a universal law**) shows the AI-search winner's *recommendation* edge is **off-site** (exact-name-match + reviews + GBP), despite a thin on-site footprint (no Identity schema, expired SSL). Frame it in **two layers, and don't dismiss on-site:** Layer 1 = *recommendation* (who the AI suggests — off-site-driven here) vs Layer 2 = *representation accuracy* (when the AI names you, is it correct + does it cite you — where on-site GEO/schema **plausibly helps**; the AI was seen confabulating TCS's details). So the rebuild lifts search/UX/conversion **+ Layer-2 accuracy**; the *recommendation* move is off-site (reviews = highest leverage). BEFORE AI baseline (0/32 blind, recognized-when-named) lives in the AIRI lane — cite, don't duplicate.
+- Lesson / adjustment: A strong on-site rebuild is **necessary but not sufficient** for AI *recommendation*, yet on-site GEO is **not irrelevant** — it's the representation-accuracy layer. And this is **n=1**: a proof-of-concept for TCS, not a proven universal rule (scale data is a future AIRI output). Don't over-promise the rebuild's AI impact, and don't over-generalize the finding.
 - Artifacts: check-in/home edits (`tcs-home`); `before/baseline-metrics.md` + `tcs-rebuild-brief.md` corrections; points to `nlxsystems-docs` → `docs/tcs-before-ai-baseline/` + `competitor-recon.md`.
 
 ### 2026-06-24 — New AEO blog post + restored the branded "you broke it" 404
@@ -137,6 +137,14 @@
 - Decision(s): Image discipline — every blog hero maps to the post's real captured-HTML original (no OG social cards as heroes); the 404 screenshot must match the *current* homepage so the "1-click fix" illusion holds.
 - Lesson / adjustment: AI-drafted copy needs a human-voice + fact pass (drop claims that don't fit, e.g. certifications) before it's publishable. And legacy animated GIFs are fragile on modern image pipelines; WebP/video is the durable replacement. (Training points.)
 - Artifacts: `webapp/src/app/blog/how-to-choose-computer-repair-service/`, `not-found.tsx`, `public/site/404-bg.webp`, `blog.ts`; commit `b9218be`.
+
+### 2026-06-24 — Tracked "Remote Help" redirect (outbound-click tracking pattern)
+- Phase·Step: Rebuild / utility + measurement
+- What: Added a header "Remote Help" button (white/inverse, beside the phone CTA) that points at an internal `/remote` page which loads, then client-side redirects to the RemotePC tool in a new tab. Committed `5724a84`, deployed (noindex).
+- Why: Cotter sends clients this link mid-call; routing through `/remote` makes the outbound click a trackable pageview (you can't measure a raw external link).
+- Decision(s): Client-side redirect, NOT a server 307 — a 307 skips the page so analytics never sees it; loading `/remote` then bouncing is what makes the hop countable (once GA is wired, #11). New tab so the customer keeps their place on the site.
+- Lesson / adjustment: To measure clicks that leave your site (affiliate links, tool logins, "book now"), route them through a thin internal redirect page rather than linking out directly. (Reusable training pattern.)
+- Artifacts: `webapp/src/app/remote/` (`page.tsx` + `RemoteRedirect.tsx`), `SiteHeader.tsx`; commit `5724a84`.
 
 ---
 *Next milestones (not yet done): DashNex sender config so forms deliver → domain/email cutover (flip `SITE.indexable`) → off-site AEO treatment → AFTER measurement (snapshot §10) → publish.*
