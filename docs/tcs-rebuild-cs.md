@@ -130,5 +130,13 @@
 - Lesson / adjustment: A strong on-site rebuild is **necessary but not sufficient** for AI visibility; entity + reputation dominate. Don't over-promise the rebuild's AI impact — the biggest training takeaway of the whole case study so far.
 - Artifacts: check-in/home edits (`tcs-home`); `before/baseline-metrics.md` + `tcs-rebuild-brief.md` corrections; points to `nlxsystems-docs` → `docs/tcs-before-ai-baseline/` + `competitor-recon.md`.
 
+### 2026-06-24 — New AEO blog post + restored the branded "you broke it" 404
+- Phase·Step: Rebuild / content + brand detail
+- What: Published a new blog post, "How to Choose a Reliable Computer Repair Service" — Cotter took an AI tool's industry-question prompt, brainstormed answers in a separate chat, and the draft was reworked into his voice here (em-dashes removed, "ask for certifications" swapped for his real differentiator of experience/track record, his actual policies woven in). 18th post; full TL;DR + FAQ-schema + internal links + hero. Also rebuilt his legacy fun 404: a full-screen cracked-screenshot of the homepage that "repairs" to the real homepage on click ("Oh No! You broke it… Fix Website"). The old 1080p animated GIF was being mangled by DashNex's image optimizer (transparency → black); replaced with an optimizer-safe WebP. Plus corrected 2 blog heroes to the originals from the captured HTML. Committed `b9218be`, deployed (noindex).
+- Why: Grow the content/AEO layer with genuinely useful, in-voice material; and restore a piece of brand personality that makes the 404 a delight instead of a dead end.
+- Decision(s): Image discipline — every blog hero maps to the post's real captured-HTML original (no OG social cards as heroes); the 404 screenshot must match the *current* homepage so the "1-click fix" illusion holds.
+- Lesson / adjustment: AI-drafted copy needs a human-voice + fact pass (drop claims that don't fit, e.g. certifications) before it's publishable. And legacy animated GIFs are fragile on modern image pipelines; WebP/video is the durable replacement. (Training points.)
+- Artifacts: `webapp/src/app/blog/how-to-choose-computer-repair-service/`, `not-found.tsx`, `public/site/404-bg.webp`, `blog.ts`; commit `b9218be`.
+
 ---
 *Next milestones (not yet done): DashNex sender config so forms deliver → domain/email cutover (flip `SITE.indexable`) → off-site AEO treatment → AFTER measurement (snapshot §10) → publish.*

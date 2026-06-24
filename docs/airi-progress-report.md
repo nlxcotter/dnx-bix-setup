@@ -20,6 +20,16 @@
 
 ---
 
+### 2026-06-24 — Honesty correction: scope (n=1) + two-layer model (Cotter critique)
+- **Phase·Step:** framing correction (epistemics).
+- **What:** Cotter flagged two overstatements: (a) generalizing an n=1/one-market case study to a universal law; (b) over-dismissing on-site GEO. Corrected across `competitor-recon.md` (scope/epistemics header + layered conclusions), snapshot §6b, roadmap, `airi-strategy.md` §2, deep-dive spec (added **Layer-2 finding H — representation accuracy**), `fulfillment-model.md`, memory. cc'd PM.
+- **Why:** a single-market case study proves nothing universal; and on-site GEO plausibly drives **Layer 2 (representation accuracy)** — which we never tested — so dismissing it was wrong (tested layer A, concluded about layer B).
+- **Decision(s):** **two-layer model** — Layer 1 recommendation (off-site, in our n=1 sample) vs Layer 2 representation accuracy (on-site GEO plausibly helps). Generalization needs **scale data** (future AIRI output). Deep Dive will measure **both** layers.
+- **Lesson / adjustment:** don't generalize from n=1; don't conclude about layer B from a layer-A test; "a tool sells free GEO reports" proves it's measurable/marketable, not that GEO drives recommendation (streetlight effect).
+- **Artifacts:** `nlxsystems-docs` `3cbcf99`.
+
+---
+
 ### 2026-06-23 — Third-party site audit folded into BEFORE snapshot
 - **Phase·Step:** TCS Case Study (BEFORE enrichment).
 - **What:** Read a Scale Rankings audit PDF of the live BEFORE site (installed poppler to render/extract it). Added the valuable deltas to `tcs-before-snapshot.md` §6b: composite **72/100** scorecard (GEO 51), GEO breakdown (llms.txt ✅ / Identity schema ❌ / 8% LLM-rendered), **spam backlink profile** (Finland-heavy report-farm links), missing SPF, social gaps, **1 review** (corroborates deficit). cc'd PM.
