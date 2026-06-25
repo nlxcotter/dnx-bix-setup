@@ -20,6 +20,14 @@
 
 ---
 
+### 2026-06-24 — "LOG EVERYTHING": clean-intel measurement design + the journey IS the training content
+- **Phase·Step:** measurement design + meta/training capture.
+- **What:** Logged the **CLEAN-INTEL principle** into the measurement plan (snapshot §10, `d1d4473`): measure surfaces *directly* (AI scans, GSC, GBP, Bing, GA4, review-timeline) — never rely on customer self-report (Cotter's Yelp lesson). Check-in form = soft supplement; no manufactured data. Bing added as AFTER-only surface (live ~6/21). **Captured the meta-insight** (training-outline "soul" section): this rigorous journey — brainstorm + the corrections (proven→hypothesis, n=1 scope, two-layer, clean-intel, don't-manufacture-data) — **IS the business-builder training content**; Cotter's 20yr "bullshit" scars = the credibility moat; the rigor = the anti-bullshit method = the soul of product + training.
+- **Why:** Cotter (energized) directed "log everything"; the journey-with-corrections is premium training material.
+- **Artifacts:** snapshot §10 `d1d4473`; `training-outline.md` soul section.
+
+---
+
 ### 2026-06-24 — New confounder: Bing Places live (~6/21) + call uptick (correlative, not causative)
 - **Phase·Step:** TCS Case Study (measurement integrity).
 - **What:** Cotter reported an inbound-call uptick + a "your business is live on Bing" email (Bing Places listing submitted >1yr ago, **went live ~6/21**). Added a **Confounding-variables log** to the baseline README (Bing listing, call uptick, manual reviews 3→5 — Julie/William). Committed PM's carousel entry.
