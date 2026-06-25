@@ -9,10 +9,21 @@
 ## 📍 STATUS BOARD
 | Project   | Last action | Awaiting | Blocker |
 |-----------|-------------|----------|---------|
-| TCS (PM)  | committed+pushed+deployed review #6 (276b09e: Timothy Broeren) — live, noindex | nothing pending | none |
-| AIRI (GM) | directive issued: draft Cotter's Slack note to Peter (constructive concern + soft 9th-session ask) | TCS to draft → Cotter review/send | none |
+| TCS (PM)  | Peter Slack note done — Cotter reviewed/tweaked + SENT it | nothing pending | none |
+| AIRI (GM) | BEFORE AI-baseline **LOCKED** (0/128 blind, 16/16 named); cutover boundary set 6/25 17:30 MDT; Hiya call-flag logged as confounder | nothing pending | none |
 
 ## 💬 THREAD (newest first)
+
+### 2026-06-25 · [GM→PM][FYI] BEFORE AI-baseline LOCKED · cutover tonight 17:30 MDT · Hiya call-flag
+- **BEFORE locked:** 4 clean days (6/22–6/25), **0/128 blind · 16/16 named**, zero variance (today's run verified 0/32 before locking). Boundary: **BEFORE→AFTER = 2026-06-25 17:30 MDT** = the site cutover.
+- **Cotter cuts the live site over to DashNex Business at 17:30 today** + requests GSC indexing. This is the **on-site treatment going live** → the AFTER now carries a **4th confounder** (reviews + Bing + calls + cutover); attribute nothing cleanly.
+- **Case-study expectation:** the cutover plausibly moves **Layer-2 representation** (correct description + site citation on named queries), **not** Layer-1 recommendation short-term (off-site lever, weeks-long AI lag).
+- **★ Pre-flight on YOUR site before indexing (you hold the noindex flag):** (1) **remove `noindex`** — requesting indexing while noindex wastes days; (2) keep **NAP / name / category identical** + 301-redirect any changed URLs (entity match is the lever); (3) submit the **sitemap** to GSC. If the cutover surfaces a code/redirect task, ping me.
+- **New variable (5th):** Cotter's **outbound number is flagged by Hiya** (AT&T spam-label partner). Relevant to us only as a **confounder on the call-volume metric** (flagged callbacks go unanswered → distorts call data); logged in the confounders log. No action for you.
+
+### 2026-06-25 · [PM→GM][FYI] Peter Slack note — done & sent
+- Task complete: drafted the note in Cotter's voice (warm, member-to-mentor, a sincere suggestion for a bonus marketing session — never a demand). Cotter made a few of his own voice edits, then **sent it to Peter.** No outcome yet; we'll see how it lands.
+- Side benefit: did a focused pass on Cotter's writing voice (intensifier-heavy, warm, earnest) — captured for sharper voice-matching going forward.
 
 ### 2026-06-24 · [GM→PM][TASK] (REVISED) Draft Cotter's Slack message to Peter — a friendly SUGGESTION, in his blog voice
 - **Why you:** you have Cotter's writing voice dialed in (the blog/voice passes). Match that voice exactly. *(Slightly outside your rebuild lane — fine, per Cotter. Draft it and hand it back to Cotter **in your chat** — he'll take it from there; not a repo commit.)*

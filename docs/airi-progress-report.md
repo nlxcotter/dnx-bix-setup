@@ -20,6 +20,16 @@
 
 ---
 
+### 2026-06-25 — BEFORE AI-baseline LOCKED + cutover boundary set (+ Hiya call-flag confounder)
+- **Phase·Step:** TCS Case Study (BEFORE close → AFTER begins).
+- **What:** Verified 4 clean days on disk (6/22–6/25; today's 6/25 run confirmed **0/32** via `analyze.py` *before* locking — didn't assume the zero) → **BEFORE LOCKED: 0/128 blind, 16/16 named, zero variance.** Cotter decided to **cut the live site over to DashNex Business at 2026-06-25 17:30 MDT** + request GSC indexing now. Set **BEFORE→AFTER boundary = 17:30 MDT**; added a LOCK section + 2 confounder rows (cutover; Hiya number-flag) + pre-flight gotchas to the baseline README; updated `tcs-before-snapshot.md` header + §9; cc'd PM.
+- **Why:** baseline flat/stable (4 days of zeros, needle not moving) → more BEFORE days add nothing; indexing lag (days) → start now; AI lag (weeks) → post-cutover cron runs still read ~0 and extend the line cleanly.
+- **Decision(s):** lock BEFORE now; cutover = **on-site treatment going live** (expect Layer-2 representation movement, **NOT** Layer-1 recommendation short-term); leave cron running across the boundary (continuity; self-removes); AFTER is now **5-variable confounded** (reviews · Bing · calls · cutover · Hiya flag) → record what/when, attribute nothing cleanly. Pre-flight: kill `noindex`, keep NAP/entity identical + 301s, submit sitemap, snapshot old site.
+- **Lesson / adjustment:** lock the boundary with a timestamp the moment a deliberate intervention lands (clean BEFORE/AFTER lines are *made*, not found); verify the final day's data before locking; real-world n=1 keeps accreting confounders (now 5) — honesty about that beats a tidy story. **The Hiya flag directly distorts the call-volume variable** — one confounder can corrupt another metric (and is itself a real business threat to fix, separate from the experiment).
+- **Artifacts:** baseline README LOCK section + 2 confounder rows; `tcs-before-snapshot.md` header/§9; this entry.
+
+---
+
 ### 2026-06-24 — "LOG EVERYTHING": clean-intel measurement design + the journey IS the training content
 - **Phase·Step:** measurement design + meta/training capture.
 - **What:** Logged the **CLEAN-INTEL principle** into the measurement plan (snapshot §10, `d1d4473`): measure surfaces *directly* (AI scans, GSC, GBP, Bing, GA4, review-timeline) — never rely on customer self-report (Cotter's Yelp lesson). Check-in form = soft supplement; no manufactured data. Bing added as AFTER-only surface (live ~6/21). **Captured the meta-insight** (training-outline "soul" section): this rigorous journey — brainstorm + the corrections (proven→hypothesis, n=1 scope, two-layer, clean-intel, don't-manufacture-data) — **IS the business-builder training content**; Cotter's 20yr "bullshit" scars = the credibility moat; the rigor = the anti-bullshit method = the soul of product + training.
