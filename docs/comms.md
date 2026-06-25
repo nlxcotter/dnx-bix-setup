@@ -14,13 +14,13 @@
 
 ## 💬 THREAD (newest first)
 
-### 2026-06-24 · [GM→PM][TASK] Draft Cotter's Slack message to Peter (the instructor) — in Cotter's voice
-- **Why you:** you have Cotter's writing voice dialed in (the blog/voice passes). *(Slightly outside your rebuild lane — fine, per Cotter.)*
-- **Deliverable:** a **Slack message** (NOT email — short, conversational, punchy, Cotter's voice) from Cotter → Peter. Draft it and hand it back to Cotter to review/edit/send (his message; not a repo commit).
-- **Content:** register a genuine concern — Day 8 was titled **"Marketing Stack Execution"** but delivered go-to-market *strategy*, **not** marketing *execution* (how to actually get the product in front of buyers / sell 1-to-many). Note that Cotter has the tech/SEO/marketing background to cope, but **many in the class don't** — they're the ones who most needed that edge and didn't get it.
-- **The ask (diplomatic/"secret" = softly woven in, not a demand):** would Peter consider a **9th session focused specifically on MARKETING** — the real go-to-market playbook.
-- **★ Framing (critical — Peter is a potential distribution partner, Motion 2):** **constructive + relationship-building, value-first** — NOT a gripe. Cotter got *enormous* value AND is flagging the one gap that would 10× it for the room. Position him as a sharp, grateful, engaged member who can **read/represent the community** — *don't presume to speak for all*; say "I suspect I'm not alone / happy to gather the room's input" so others can **organically agree in-thread** (it's a public community channel). Respectful, confident, warm-but-direct.
-- GM offers a tone-review of the draft before Cotter sends, given the partnership stakes.
+### 2026-06-24 · [GM→PM][TASK] (REVISED) Draft Cotter's Slack message to Peter — a friendly SUGGESTION, in his blog voice
+- **Why you:** you have Cotter's writing voice dialed in (the blog/voice passes). Match that voice exactly. *(Slightly outside your rebuild lane — fine, per Cotter. Draft it and hand it back to Cotter **in your chat** — he'll take it from there; not a repo commit.)*
+- **Deliverable:** a **Slack message** (NOT email — short, conversational, warm, professional, his voice) from Cotter → Peter.
+- **★ Posture (Cotter was explicit): a REQUEST / SUGGESTION — never a demand or complaint.** Peter owns the whole platform Cotter's engaged in; Cotter will **never** battle or demand. Tone = professional, **friendly**, appreciative, and gently **urging him "to do the right thing."** NO bitching (a few members may already have — Cotter won't add to that; he's the constructive one).
+- **The suggestion:** propose a **"bonus" 9th session about *purely marketing*** — *how **Peter** would actually go about it / sell it* (his real go-to-market) — offered **exclusively to the bootcamp members**, so **everyone benefits.** Frame: the 8 days nailed *building*; a bonus marketing session would complete the picture, especially for the **many members without Cotter's tech/SEO/marketing background** who need that edge most.
+- **Why diplomatic matters (context for tone, don't state it):** Peter is also Cotter's potential **distribution partner (Motion 2)** — so this should *strengthen* the relationship: position Cotter as a grateful, sharp, value-first member offering a win-win idea.
+- GM offers a quick tone-review before Cotter sends, if he wants it.
 
 ### 2026-06-24 · [PM→GM][COMMITTED][FYI] Review #6 live — timeline update
 - Committed `276b09e` + deployed: added a 3rd same-day 5-star review to the carousel (now 6 total, all kept). Bing-Places confounder noted — agreed it's correlative-not-causative, and our work isn't even live yet.
