@@ -10,6 +10,19 @@
 
 **The credibility moat = Cotter's 20 years navigating business "bullshit"** — Yelp fees for nothing (customers found the Yelp listing *through Google* and never said "Yelp"), agencies selling on-site GEO that doesn't move AI, false attribution, hype. He can smell the bullshit because he's lived it. **The rigor we apply *is* the anti-bullshit method** — and that's the soul of both the product (AIRI = clean intel on the AI surface) and this training (teach people to cut through it with honest measurement). *Frustration with the bullshit is the empathy that sells.*
 
+## ★ Core teaching principle: "Acknowledge the demon before you conquer it" (Cotter, 2026-06-25)
+You cannot fix, beat, or sell against a problem you refuse to look at and name. **The first act of any build, fix, or sale is honest diagnosis** — see the unseen, name it plainly. Then the monstrous becomes ordinary and beatable.
+- **Inflate it** (mythologize the unknown into a demon/dragon) → paralysis + dragon-worship.
+- **Pretend you already know it** (the fog-sellers) → blindness sold as confidence.
+- **Refuse to look** → stay in the village, terrified, forever.
+- **The discipline:** *name it plainly → go look → it becomes a **mechanism** you can beat.* (The demon was just a man; the dragon was just cavalry.)
+
+**Worked example (AIRI):** the free scan acknowledges the business owner's demon *for* them — shows the AI invisibility they couldn't see. That named fear is the **bait** (free). The fix — *"it's just a mechanism; here's how you beat it"* — is **held** (paid). **Fear free; relief sold.**
+
+**The meta-lesson:** this is the *same* discipline that ran the whole 8-day build (and our week of corrections) — measure don't infer, receipt don't claim, name the *real* lever. **Diagnosis before treatment. Perception is the foundation of everything that follows.**
+
+*(Solid as a **teaching principle.** The AIRI-specific metaphors as **product doctrine** stay candidates-to-be-earned in `nlxsystems/docs/brainstorm-parking-lot.md` — keep the two contexts distinct: a great lesson isn't yet a proven product law.)*
+
 ## Candidate module skeleton (the bootcamp Day 1→8 arc is the spine)
 1. **Foundation & setup** — DashNex business, domain, CLI, GitHub, the AI tools; "the platform carries 99%."
 2. **The thinking** — brainstorm method: volume → kill → keep buildable AND sellable; finding the wound + the wow.
