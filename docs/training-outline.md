@@ -10,18 +10,27 @@
 
 **The credibility moat = Cotter's 20 years navigating business "bullshit"** — Yelp fees for nothing (customers found the Yelp listing *through Google* and never said "Yelp"), agencies selling on-site GEO that doesn't move AI, false attribution, hype. He can smell the bullshit because he's lived it. **The rigor we apply *is* the anti-bullshit method** — and that's the soul of both the product (AIRI = clean intel on the AI surface) and this training (teach people to cut through it with honest measurement). *Frustration with the bullshit is the empathy that sells.*
 
-## ★ Core teaching principle: "Acknowledge the demon before you conquer it" (Cotter, 2026-06-25)
-You cannot fix, beat, or sell against a problem you refuse to look at and name. **The first act of any build, fix, or sale is honest diagnosis** — see the unseen, name it plainly. Then the monstrous becomes ordinary and beatable.
-- **Inflate it** (mythologize the unknown into a demon/dragon) → paralysis + dragon-worship.
-- **Pretend you already know it** (the fog-sellers) → blindness sold as confidence.
-- **Refuse to look** → stay in the village, terrified, forever.
-- **The discipline:** *name it plainly → go look → it becomes a **mechanism** you can beat.* (The demon was just a man; the dragon was just cavalry.)
+## ★ Core teaching ALGORITHM: "Name the real threat in front of you — kill that one, as best you can" (Cotter, 2026-06-25)
+**Not just an AIRI guideline — an operating + teaching algorithm.** And deliberately **NOT** about demons and dragons. *Those are the costume.* The focus is **real threats** — the ordinary, present, killable thing actually in front of you. Inflating a threat into a myth ("a demon," "a dragon") is itself a failure mode: mythology paralyzes, and the imagined monster is never the thing that actually gets you. First you must *acknowledge* the real threat — then you strip its costume and kill it.
 
-**Worked example (AIRI):** the free scan acknowledges the business owner's demon *for* them — shows the AI invisibility they couldn't see. That named fear is the **bait** (free). The fix — *"it's just a mechanism; here's how you beat it"* — is **held** (paid). **Fear free; relief sold.**
+**The algorithm (run it on a build, a diagnosis, a sales problem, or a panic):**
+1. **Strip the costume.** Name the threat as the plain, ordinary thing it is — no demon, no dragon. (The demon was just a man; the dragon was just cavalry.)
+2. **Real, and present?** Imagined or distant → not your fight right now. Chasing it *costs* you the fight you're actually in.
+3. **Which kills you next?** Among the real-and-present threats, triage by **lethality-if-ignored — NOT nearness or loudness.** (The trap isn't only chasing dragons; it's firefighting the nearest *small* real thing while the actual killer sits untouched in your blind spot.)
+4. **Contain that one — as best you can.** Not perfectly, not all of them. *That one, well.*
+5. **Accept there are always more.** *"There are more"* — you will never contain them all alone; that's the terrain, not failure. Kill the next real one, then the next.
 
-**The meta-lesson:** this is the *same* discipline that ran the whole 8-day build (and our week of corrections) — measure don't infer, receipt don't claim, name the *real* lever. **Diagnosis before treatment. Perception is the foundation of everything that follows.**
+**Why it's an algorithm, not a slogan — it's the SAME move we've already lived, in four domains:**
+- **Build:** one rung at a time; never let the AI build everything at once.
+- **Diagnosis:** name the *one* real lever (reviews / name-match) — not every imagined cause.
+- **Rigor:** deal with the data in front of you (n=1, this market) — not the imagined universal law.
+- **Overwhelm / ADHD:** handle the one present, real thing — not the what-if spiral (the dragons).
 
-*(Solid as a **teaching principle.** The AIRI-specific metaphors as **product doctrine** stay candidates-to-be-earned in `nlxsystems/docs/brainstorm-parking-lot.md` — keep the two contexts distinct: a great lesson isn't yet a proven product law.)*
+*One algorithm, four domains. That's what makes it teachable.*
+
+**Worked example (AIRI):** the owner's **dragon** = *"AI is unknowable magic, I'm doomed."* Strip it. The **real, present threat** = *"you're invisible on these specific customer queries, and this one lever is costing you."* Kill that one, as best you can. **"There are more"** = every engine, every query, every competitor — you don't boil the ocean; you take the real lever in front of you, then the next. *(The diagnosis = the free scan / bait; the fix = held / paid. Fear free, relief sold.)*
+
+*(Solid as a **teaching algorithm** — a method, true across domains. The AIRI-specific **product metaphors / copy** still stay candidates-to-be-earned in `nlxsystems/docs/brainstorm-parking-lot.md` — keep the two contexts distinct: a great method isn't yet a proven product law.)*
 
 ## Candidate module skeleton (the bootcamp Day 1→8 arc is the spine)
 1. **Foundation & setup** — DashNex business, domain, CLI, GitHub, the AI tools; "the platform carries 99%."
