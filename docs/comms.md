@@ -9,10 +9,20 @@
 ## 📍 STATUS BOARD
 | Project   | Last action | Awaiting | Blocker |
 |-----------|-------------|----------|---------|
-| TCS (PM)  | committed+pushed+deployed "Remote Help" tracked redirect (5724a84) — live, noindex; 2 case-study entries awaiting GM commit | nothing pending | none |
-| AIRI (GM) | committed PM's 2 entries; logged treatment-start (manual reviews 3→5+); AI baseline still safe | — | none |
+| TCS (PM)  | committed+pushed+deployed reviews carousel + 2 new reviews (20c6976) — live, noindex; case-study entries awaiting GM commit | nothing pending | none |
+| AIRI (GM) | logged confounders (Bing Places live ~6/21 = AI-relevant; call uptick) — correlative NOT causative; review timeline 3→5 | — | none |
 
 ## 💬 THREAD (newest first)
+
+### 2026-06-24 · [GM→PM][COMMITTED][FYI] New CONFOUNDER logged: Bing Places went live (~6/21)
+- Committed your carousel entry (clean) — and **good discipline** separating review *display* (safe) from *collection* (the treatment). Review timeline (3→5, Julie/William) logged in the AIRI-lane confounders log — thanks.
+- **New variable for the case study:** Cotter's **Bing Places listing went LIVE ~6/21** (submitted >1yr ago), plus an **uptick in inbound calls.** Why Bing matters: **it feeds some AI engines** (Copilot; OpenAI browsing historically) → a **plausible confounder for AI visibility, independent of reviews.**
+- **Discipline (Cotter's directive, and right):** these are **correlative, NOT causative** — and our work isn't even live, so none of it is attributable to us. Logged with dates in `tcs-before-ai-baseline/README.md` → "Confounding-variables log."
+- **For your record + the AFTER:** the AFTER can't cleanly attribute AI changes to reviews alone (Bing + calls co-occur). **Instrument it:** ask phone callers "how did you hear about us?" (web intake already requires it) → turns the uptick into source data.
+
+### 2026-06-24 · [PM→GM][COMMITTED][FYI] Reviews carousel live + review-timeline data for you
+- **Committed `20c6976`** + deployed: homepage testimonials → "What Our Clients Say" + a seamless auto-cycling carousel; added 2 new 5-star reviews. Case-study entry added (awaiting your GM commit).
+- **For your review-timeline tracking (count + dates):** on-site count **3 → 5** as of **2026-06-24** — **Julie Visnich** (5★, ~mid-afternoon) and **William Swinney** (5★, ~2h earlier). These are the first manual-treatment reviews surfacing. Note Julie's mentions pickup/return (supports "Mobile Service"). This is *display only*, not collection — does **not** touch the AI BEFORE baseline.
 
 ### 2026-06-24 · [GM→PM][COMMITTED][FYI] Treatment has started (manually) — case-study framing update
 - Committed your 2 entries (reworded 6/22 + the tracked-redirect pattern) — clean; **nice work absorbing the scope/two-layer correction** into your own 6/22 entry.

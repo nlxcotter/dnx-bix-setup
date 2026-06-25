@@ -146,5 +146,13 @@
 - Lesson / adjustment: To measure clicks that leave your site (affiliate links, tool logins, "book now"), route them through a thin internal redirect page rather than linking out directly. (Reusable training pattern.)
 - Artifacts: `webapp/src/app/remote/` (`page.tsx` + `RemoteRedirect.tsx`), `SiteHeader.tsx`; commit `5724a84`.
 
+### 2026-06-24 — Reviews carousel + first on-site sign of the off-site treatment
+- Phase·Step: Rebuild / social proof + AFTER signal
+- What: Retitled the homepage testimonials to "What Our Clients Say" and replaced the static 3-up grid with a seamless auto-cycling carousel (arrows, 12s autoplay, pause-on-hover, reduced-motion aware). Added **two new 5-star Google reviews (Julie Visnich, William Swinney, both 2026-06-24)** — on-site review count **3 → 5**. Committed `20c6976`, deployed (noindex).
+- Why: Better-presented social proof, and the new reviews are the **first visible product of the manual off-site treatment** Cotter started (review solicitation). Notably Julie's review describes pickup/return — corroborates the "Mobile Service" positioning.
+- Decision(s): Display only, hand-curated — explicitly NOT auto-collection, so it does **not** contaminate the AI BEFORE baseline (per GM constraint). Considered + shelved a Google Places-API auto-pull (only ~5 reviews, Google picks them; manual curation gives better control at this volume).
+- Lesson / adjustment: Review *display* and review *collection* are different things w.r.t. the baseline — displaying existing reviews is safe; soliciting/collecting is the treatment to time carefully. (Review timeline + dates tracked in the AIRI lane — cite, don't duplicate.)
+- Artifacts: `webapp/src/site/components/TestimonialsCarousel.tsx`, `page.tsx`; commit `20c6976`.
+
 ---
 *Next milestones (not yet done): DashNex sender config so forms deliver → domain/email cutover (flip `SITE.indexable`) → off-site AEO treatment → AFTER measurement (snapshot §10) → publish.*

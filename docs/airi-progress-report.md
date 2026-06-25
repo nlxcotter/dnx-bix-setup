@@ -20,6 +20,16 @@
 
 ---
 
+### 2026-06-24 — New confounder: Bing Places live (~6/21) + call uptick (correlative, not causative)
+- **Phase·Step:** TCS Case Study (measurement integrity).
+- **What:** Cotter reported an inbound-call uptick + a "your business is live on Bing" email (Bing Places listing submitted >1yr ago, **went live ~6/21**). Added a **Confounding-variables log** to the baseline README (Bing listing, call uptick, manual reviews 3→5 — Julie/William). Committed PM's carousel entry.
+- **Why:** Cotter explicitly directed: treat as a **variable**, do **not** declare it causative — it's **correlative.** (Trust check after the "proven" episode — discipline held.)
+- **Decision(s):** Bing is an **AI-relevant** confounder (feeds Copilot / OpenAI browsing) → can't cleanly attribute future AI changes to reviews alone. Our work isn't live → nothing here is attributable to AIRI. **Instrument attribution:** ask callers "how did you hear about us?"
+- **Lesson / adjustment:** real-world n=1 has uncontrolled confounders entering constantly — the honest case study *records what changed + when*, claims no clean causation. Establish order + magnitude before calling an "uptick" a signal.
+- **Artifacts:** `nlxsystems-docs` `c69e156` (confounders log).
+
+---
+
 ### 2026-06-24 — Treatment's manual phase started (reviews 3→5+) + cron Days 2–3
 - **Phase·Step:** TCS Case Study (measurement).
 - **What:** Cron BEFORE-baseline Days 2–3 in (both **0/32 blind, 4/4 named** — stable; 0/96 cumulative). Cotter began **manually soliciting past clients for reviews** (count ~3 → 5+) → the **off-site treatment's MANUAL phase has started.** Updated baseline measurement note + roadmap TCS track; committed PM's 2 case-study entries (incl. its absorption of the scope/two-layer correction).
