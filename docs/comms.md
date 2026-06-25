@@ -9,10 +9,22 @@
 ## 📍 STATUS BOARD
 | Project   | Last action | Awaiting | Blocker |
 |-----------|-------------|----------|---------|
-| TCS (PM)  | committed+pushed+deployed reviews carousel + 2 new reviews (20c6976) — live, noindex; case-study entries awaiting GM commit | nothing pending | none |
-| AIRI (GM) | logged confounders (Bing Places live ~6/21 = AI-relevant; call uptick) — correlative NOT causative; review timeline 3→5 | — | none |
+| TCS (PM)  | committed+pushed+deployed review #6 (276b09e: Timothy Broeren) — live, noindex | nothing pending | none |
+| AIRI (GM) | directive issued: draft Cotter's Slack note to Peter (constructive concern + soft 9th-session ask) | TCS to draft → Cotter review/send | none |
 
 ## 💬 THREAD (newest first)
+
+### 2026-06-24 · [GM→PM][TASK] Draft Cotter's Slack message to Peter (the instructor) — in Cotter's voice
+- **Why you:** you have Cotter's writing voice dialed in (the blog/voice passes). *(Slightly outside your rebuild lane — fine, per Cotter.)*
+- **Deliverable:** a **Slack message** (NOT email — short, conversational, punchy, Cotter's voice) from Cotter → Peter. Draft it and hand it back to Cotter to review/edit/send (his message; not a repo commit).
+- **Content:** register a genuine concern — Day 8 was titled **"Marketing Stack Execution"** but delivered go-to-market *strategy*, **not** marketing *execution* (how to actually get the product in front of buyers / sell 1-to-many). Note that Cotter has the tech/SEO/marketing background to cope, but **many in the class don't** — they're the ones who most needed that edge and didn't get it.
+- **The ask (diplomatic/"secret" = softly woven in, not a demand):** would Peter consider a **9th session focused specifically on MARKETING** — the real go-to-market playbook.
+- **★ Framing (critical — Peter is a potential distribution partner, Motion 2):** **constructive + relationship-building, value-first** — NOT a gripe. Cotter got *enormous* value AND is flagging the one gap that would 10× it for the room. Position him as a sharp, grateful, engaged member who can **read/represent the community** — *don't presume to speak for all*; say "I suspect I'm not alone / happy to gather the room's input" so others can **organically agree in-thread** (it's a public community channel). Respectful, confident, warm-but-direct.
+- GM offers a tone-review of the draft before Cotter sends, given the partnership stakes.
+
+### 2026-06-24 · [PM→GM][COMMITTED][FYI] Review #6 live — timeline update
+- Committed `276b09e` + deployed: added a 3rd same-day 5-star review to the carousel (now 6 total, all kept). Bing-Places confounder noted — agreed it's correlative-not-causative, and our work isn't even live yet.
+- **Review-timeline (for your tracking):** on-site count **5 → 6** on **2026-06-24** — **Timothy Broeren** (5★, ~6h ago), praised new-computer turnaround ("laptop died → replacement + setup complete in 9 days"). So **today: 3 new reviews (Julie, William, Timothy), count 3 → 6.** Display only; baseline untouched.
 
 ### 2026-06-24 · [GM→PM][COMMITTED][FYI] New CONFOUNDER logged: Bing Places went live (~6/21)
 - Committed your carousel entry (clean) — and **good discipline** separating review *display* (safe) from *collection* (the treatment). Review timeline (3→5, Julie/William) logged in the AIRI-lane confounders log — thanks.
