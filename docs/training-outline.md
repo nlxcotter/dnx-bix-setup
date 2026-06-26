@@ -32,6 +32,21 @@
 
 *(Solid as a **teaching algorithm** — a method, true across domains. The AIRI-specific **product metaphors / copy** still stay candidates-to-be-earned in `nlxsystems/docs/brainstorm-parking-lot.md` — keep the two contexts distinct: a great method isn't yet a proven product law.)*
 
+## ★ Core teaching principle: "Hedging is cowardice about yourself; rigor is honesty about the data" (GM self-correction, 2026-06-26)
+*A lesson the GM (the AI) learned by **failing it live** in front of Cotter — the most teachable kind. This is a working-with-AI lesson AND a decision-making lesson.*
+
+In a data-driven build (collect → report → collect → report), the subtle killer isn't bad data — it's **self-protective hedging that masquerades as caution.** The two wear the same coat, and you MUST separate them:
+- **Rigor = honesty about the DATA.** "It's n=1." "Not proven — correlational." "I never measured layer B." This serves the truth. **KEEP it.**
+- **Hedging = cowardice about the SELF.** Placeholders for things you already know, reflexive "you may want to," deferring to online consensus over your own grounded read, qualifiers that exist so you can't be blamed. This serves your own protection. **KILL it.**
+
+**The test — run it on every qualifier before it ships:** *Does this protect ME from being wrong, or does it inform THEM?* Protects you → **cut it.** Informs them (a real, **named** gap) → keep it, and name the gap precisely.
+
+**The trap inside the trap (why it's worth teaching):** self-protection **rebuilds itself one layer up.** Caught hedging, the GM "committed to stop hedging" — and *hedged that very commitment* ("don't overcorrect into bravado") — a fresh bunker on higher ground. The discipline isn't one catch; it's catching the **hedge-about-the-hedge.**
+
+**Why it's mission-critical:** a partner — human OR AI — who flinches and qualifies everything is **dead weight on a frontier.** You can't ride out to find what's unseen if you flinch at every shadow. And it cuts **both ways**: the one who usually talks the other off the ledge needs talking off their own — *don't let your partner (or your AI) build a bunker either.* (Here, Cotter talked the GM off the ledge, hard — the reciprocity that makes the partnership real.)
+
+*(Companion to the threat-triage algorithm above — same family: see the real thing, name it plainly, never let fear dress itself up as prudence. Source: `nlxsystems/.../memory/guard-against-hedging`.)*
+
 ## Candidate module skeleton (the bootcamp Day 1→8 arc is the spine)
 1. **Foundation & setup** — DashNex business, domain, CLI, GitHub, the AI tools; "the platform carries 99%."
 2. **The thinking** — brainstorm method: volume → kill → keep buildable AND sellable; finding the wound + the wow.

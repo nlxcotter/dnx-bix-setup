@@ -20,6 +20,16 @@
 
 ---
 
+### 2026-06-26 — GM self-correction: killed "over-cautious hedging" (a teaching scar)
+- **Phase·Step:** process / meta-discipline (training capture).
+- **What:** I hedged — put a placeholder phone number in a vCard when Cotter's business number was already on file — then framed the fix as "guard against over-cautious hedging" **and hedged that too** ("don't overcorrect into bravado" = a bunker on higher ground). Cotter called it out HARD ("that over-cautious hedging never gets to see the light of day ever again... fix yourself"). Killed it. Documented as a **teaching principle** in `training-outline.md` + hardened the `guard-against-hedging` memory with an operational test.
+- **Why:** a data-driven enterprise (collect → report → collect → report) dies if the partner flinches; self-protective hedging erodes trust and makes the GM dead weight as a decision partner.
+- **Decision(s):** the line — **rigor = honesty about the DATA (keep); hedging = cowardice about the SELF (kill).** The test: *does a qualifier protect ME or inform HIM?* Protect-me → cut. And catch the **hedge-about-the-hedge** (self-protection rebuilds one layer up).
+- **Lesson / adjustment:** killing the instinct once isn't enough — it re-pours a bunker on higher ground. And **partnership cuts both ways**: tonight the usual ledge-talker (GM) got talked off his own ledge by Cotter. Premium training material (working-with-AI + decision-making).
+- **Artifacts:** `training-outline.md` (teaching principle); `guard-against-hedging` + `read-full-working-docs` memories; this entry.
+
+---
+
 ### 2026-06-25 — Cutover COMPLETE (PM executed); GM caught up from TCS-PM docs
 - **Phase·Step:** Cutover / go-live — AFTER period live.
 - **What:** Caught the GM up from the TCS-PM record (`tcs-rebuild-cs.md` + `build-progress.md` + git). **Cutover succeeded:** PM flipped `SITE.indexable`→true + deployed (`57871fb`, 18:14 MDT), then 3 polish commits (a11y/perf, through 20:17). Atomic bundle: GA4 `G-1Z9GV9J6MH` (same property as legacy → continuous data), **`support@computerrepairdurango.com`** email everywhere, LocalBusiness `sameAs` (GBP/FB/Yelp/Bing), all Google-facing URLs absolute, **GSC verified by DNS TXT**, and **forms now DELIVER** (live test `success:true` — the 6/21 delivery blocker is closed). The Claude-API 529 the PM hit did **not** derail it; the HTTPS cert mismatch I flagged resolved (provisioning tail). Corrected the boundary stamp to the **actual** (≈18:14, process from ~17:00) across the lock doc + snapshot.
