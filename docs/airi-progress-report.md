@@ -20,6 +20,16 @@
 
 ---
 
+### 2026-06-25 — Cutover COMPLETE (PM executed); GM caught up from TCS-PM docs
+- **Phase·Step:** Cutover / go-live — AFTER period live.
+- **What:** Caught the GM up from the TCS-PM record (`tcs-rebuild-cs.md` + `build-progress.md` + git). **Cutover succeeded:** PM flipped `SITE.indexable`→true + deployed (`57871fb`, 18:14 MDT), then 3 polish commits (a11y/perf, through 20:17). Atomic bundle: GA4 `G-1Z9GV9J6MH` (same property as legacy → continuous data), **`support@computerrepairdurango.com`** email everywhere, LocalBusiness `sameAs` (GBP/FB/Yelp/Bing), all Google-facing URLs absolute, **GSC verified by DNS TXT**, and **forms now DELIVER** (live test `success:true` — the 6/21 delivery blocker is closed). The Claude-API 529 the PM hit did **not** derail it; the HTTPS cert mismatch I flagged resolved (provisioning tail). Corrected the boundary stamp to the **actual** (≈18:14, process from ~17:00) across the lock doc + snapshot.
+- **Why:** Cotter asked the GM to sync to current events; honest records need the *actual* cutover outcome + time, not the planned one.
+- **Decision(s):** boundary recorded as a **window (~17:00→18:14 MDT), not a knife-edge** — the 44-min spread is immaterial to attribution (AI lag weeks). **`support@` mailbox now exists → unblocks the Hiya/FreeCallerRegistry registration** (they rejected the gmail) — the cutover quietly cleared the phone-fix dependency. GSC indexing request **pending** (Cotter tuning perf flags first — correct: fix perf before the first crawl; but don't chase the lab-score floor, field CWV is the real KPI).
+- **Lesson / adjustment:** a pre-wired one-switch cutover + atomic bundle made go-live low-drama; a real-world cutover is a *process with hiccups*, not an instant — record the window honestly. One thread's output (support@ for forms) silently solved another thread's blocker (phone) — watch for those cross-unblocks.
+- **Artifacts:** `tcs-home` `57871fb`→`2bc575d`; lock doc + snapshot boundary corrections; PM's `tcs-rebuild-cs.md` cutover entry.
+
+---
+
 ### 2026-06-25 — BEFORE AI-baseline LOCKED + cutover boundary set (+ Hiya call-flag confounder)
 - **Phase·Step:** TCS Case Study (BEFORE close → AFTER begins).
 - **What:** Verified 4 clean days on disk (6/22–6/25; today's 6/25 run confirmed **0/32** via `analyze.py` *before* locking — didn't assume the zero) → **BEFORE LOCKED: 0/128 blind, 16/16 named, zero variance.** Cotter decided to **cut the live site over to DashNex Business at 2026-06-25 17:30 MDT** + request GSC indexing now. Set **BEFORE→AFTER boundary = 17:30 MDT**; added a LOCK section + 2 confounder rows (cutover; Hiya number-flag) + pre-flight gotchas to the baseline README; updated `tcs-before-snapshot.md` header + §9; cc'd PM.

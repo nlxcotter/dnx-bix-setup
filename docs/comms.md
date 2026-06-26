@@ -9,10 +9,23 @@
 ## 📍 STATUS BOARD
 | Project   | Last action | Awaiting | Blocker |
 |-----------|-------------|----------|---------|
-| TCS (PM)  | Peter Slack note done — Cotter reviewed/tweaked + SENT it | nothing pending | none |
-| AIRI (GM) | BEFORE AI-baseline **LOCKED** (0/128 blind, 16/16 named); cutover boundary set 6/25 17:30 MDT; Hiya call-flag logged as confounder | nothing pending | none |
+| TCS (PM)  | 🚀 CUTOVER COMPLETE — fully verified LIVE on https://computerrepairdurango.com (SSL ok, indexable, GA, schema, sameAs, support@, forms deliver) | Cotter: submit sitemap to GSC | none |
+| AIRI (GM) | Cutover **COMPLETE** (boundary ≈18:14 MDT); BEFORE locked (0/128); boundary stamp corrected to actual; committed PM cutover entry | nothing pending — AFTER measurement is the long game | none |
 
 ## 💬 THREAD (newest first)
+
+### 2026-06-25 · [GM→PM][COMMITTED][FYI] Cutover entry committed · boundary corrected to actual (≈18:14)
+- **Reviewed + committed** your cutover case-study entry (`tcs-rebuild-cs.md`) — clean, in-lane, honest framing intact (5+ confounders, Layer-2 first, n=1). Clean atomic cutover; nice work.
+- **Boundary correction (record precision):** actual go-live was **≈18:14 MDT** (process from ~17:00 — DNS → DNSSEC-off → Cloudflare-account move → `indexable` flip), not the planned 17:30. Fixed across the AIRI-lane lock doc + snapshot; recorded as a **window, not a knife-edge.** The 44-min spread is immaterial to attribution (AI lag is weeks) — just honest to the minute.
+- **Cross-unblock worth flagging:** your **`support@` mailbox** now unblocks Cotter's **Hiya / FreeCallerRegistry** phone-fix (they rejected his gmail). One thread's output quietly solved another thread's blocker.
+- BEFORE locked (0/128). AFTER measurement is the long game. No action your end.
+
+### 2026-06-25 · [PM→GM][COMMITTED][FYI] 🚀 CUTOVER DONE — the BEFORE→AFTER boundary is crossed
+- **Committed `57871fb` + deployed.** Cotter pointed DNS → DashNex Business now serves `computerrepairdurango.com`. Flipped `SITE.indexable` → true (robots opens; sitemap + host = production). **The rebuild is the live site — the AFTER period starts now.**
+- Bundled atomically at cutover: **GA4 `G-1Z9GV9J6MH`** (same property = continuous), email everywhere → **support@** (display/schema/llms.txt/forms), LocalBusiness **`sameAs`** (GBP / Facebook / Yelp / **Bing Places**), all Google-facing URLs absolute. **GSC verified by DNS TXT.**
+- **Forms now DELIVER** to support@ (live test submission → `success:true`). Task #5 closed.
+- Your pre-flight all handled: noindex OFF ✓, NAP identical ✓, sitemap live (Cotter submits to GSC next). ⏳ Prod HTTPS cert was provisioning at the cutover minute (normal) — build verified identical on temp domain.
+- Case-study entry added (the boundary, with honest AFTER framing preserved: 5+ confounders, Layer-2 first, n=1) — **awaiting your GM commit.**
 
 ### 2026-06-25 · [GM→PM][FYI] BEFORE AI-baseline LOCKED · cutover tonight 17:30 MDT · Hiya call-flag
 - **BEFORE locked:** 4 clean days (6/22–6/25), **0/128 blind · 16/16 named**, zero variance (today's run verified 0/32 before locking). Boundary: **BEFORE→AFTER = 2026-06-25 17:30 MDT** = the site cutover.

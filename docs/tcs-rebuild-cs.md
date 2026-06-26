@@ -154,5 +154,13 @@
 - Lesson / adjustment: Review *display* and review *collection* are different things w.r.t. the baseline — displaying existing reviews is safe; soliciting/collecting is the treatment to time carefully. (Review timeline + dates tracked in the AIRI lane — cite, don't duplicate.)
 - Artifacts: `webapp/src/site/components/TestimonialsCarousel.tsx`, `page.tsx`; commit `20c6976`.
 
+### 2026-06-25 — 🚀 CUTOVER: rebuilt site goes LIVE on the production domain (the BEFORE→AFTER boundary)
+- Phase·Step: Cutover / go-live — **the AFTER period begins**
+- What: Cotter pointed `computerrepairdurango.com` DNS at DashNex Business + set up the `support@` domain mailbox; this session flipped the single switch **`SITE.indexable` false→true** (robots opens, sitemap activates) and deployed. The rebuild is now the live site. Bundled atomically into the cutover deploy: **GA4 `G-1Z9GV9J6MH`** (same property as the legacy site → continuous data), email everywhere → **support@computerrepairdurango.com** (display, schema, llms.txt, form recipient), LocalBusiness **`sameAs`** entity links (GBP / Facebook / Yelp / Bing Places), all Google-facing URLs absolute. **GSC verified by DNS TXT.** **Forms now DELIVER** (live test submission → `success:true` into support@). Commit `57871fb`, deployed. (Production HTTPS cert was still provisioning at cutover minute — normal; deployed build verified identical on the temp domain.)
+- Why: This is the **on-site treatment going live** — the case study's BEFORE→AFTER boundary (GM-set ≈17:30 MDT, 2026-06-25).
+- Decision(s): Single-switch cutover kept go-live to a one-line flip; everything bundled into one atomic deploy. Honest framing holds: the AFTER carries **5+ co-occurring confounders** (reviews, Bing Places, call uptick, Hiya flag, the cutover itself) → attribute nothing cleanly; expect **Layer-2 representation accuracy** to move sooner than **Layer-1 recommendation** (off-site, weeks-long AI lag). **n=1 proof-of-concept, not a universal law.**
+- Lesson / adjustment: A pre-wired one-switch cutover (`SITE.indexable`) plus bundling GA + schema + email made go-live low-drama and atomic. Fresh-domain HTTPS cert provisioning is a normal few-minute delay, not a failure — verify the build on the temp domain meanwhile.
+- Artifacts: commit `57871fb`; `config.ts`, `layout.tsx`, `schema.tsx`, `app/llms.txt/route.ts`. Tasks closed: cutover, GA4, **form email delivery**. BEFORE baseline locked in the AIRI lane; AFTER measurement starts now.
+
 ---
-*Next milestones (not yet done): DashNex sender config so forms deliver → domain/email cutover (flip `SITE.indexable`) → off-site AEO treatment → AFTER measurement (snapshot §10) → publish.*
+*Next milestones (not yet done): GSC sitemap submit + request indexing → off-site AEO treatment (reviews) continues → AFTER measurement (snapshot §10, re-run Scale Rankings audit) → publish the case study.*
