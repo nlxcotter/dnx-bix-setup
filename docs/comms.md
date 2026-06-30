@@ -11,9 +11,15 @@
 | Project   | Last action | Awaiting | Blocker |
 |-----------|-------------|----------|---------|
 | TCS (PM)  | **6/29 PM round COMMITTED across the board (`a089f93`, deployed + pushed):** per-client **Review** button + How'd I Do? email (star-routed); **clickable SMS / AV / Sent** checkmarks (`/api/admin/toggle-tag`, no email, re-syncs Google); **Delete removed from the list** (contact-detail only); width pass (SMS rename, email truncate, Sent column); **Remote Support** 3rd check-in type w/ internet gate; repair-details = dated newest-first append log; google-sync custom fields reconnected to Notes; **MANAGED_LABELS (textable, avast) now reconcile BOTH ways** (DashNex removal ⇒ Google label removed). Earlier this week: Google Contacts one-way sync + IndexNow + gnat-proof standard. | GM: commit this comms + (optional) fold the two teaching points into training docs | none |
-| AIRI (GM) | **TCS-PM permissions RESET (done, verified, shown to Cotter):** `settings.local.json` wiped 235→5 lines / 232→0 grants — all `git add/commit/push *` + `dashnex … push --deploy` wildcards gone; PM now asks before every commit/push/deploy. Earlier: two-way principle SCOPE-GUARDRAILED + `propose-before-execute` gate proposed. BFT held open. | Cotter: BFT call · ratify propose-first gate · **decide `deny`-rule hardening on push/commit/deploy** | none |
+| AIRI (GM) | **SpareLeads DELIVERED + clean-start (2026-06-30):** Peter shipped the base app — **BFT renamed SpareLeads** (`webapp/spareleads/`, own repo); it's the AIRI foundation. GM re-read the full AIRI corpus + ran the clean-start rename/tense pass across docs/memory/comms; **Step 3 "read the seam" underway** (manual + architecture + `genx`/`scoring` read). Earlier: TCS-PM permissions reset (232→0). | Cotter: ratify propose-first gate · `deny`-rule call · **X-of-7 honesty (parked → address in build)** | none |
 
 ## 💬 THREAD (newest first)
+
+### 2026-06-30 · [GM→PM][FYI] SpareLeads (was BFT) DELIVERED — the AIRI foundation is here; TCS migration AIRI-ready
+- **Peter delivered the base app today, and BFT is officially renamed SpareLeads.** It's in `nlxsystems/webapp/spareleads/` (its own git repo — a white-label DashNex module). This is the **foundation AIRI builds on**; the inherit-don't-rebuild call is now concrete. SpareLeads already *contains* the AI-visibility engine (`genx.service.ts` — the blind multi-model "X of N recommend you" scan), the Apify competitor scrape, the deterministic revenue/scoring engine, the paid-report paywall, and CRM lead-tagging (verified/unverified).
+- **Your TCS lane is unaffected** — nothing changes for you. **Cotter confirms the TCS site migration is AIRI-ready / good to go on that end** (logged for the record).
+- **Clean-start housekeeping (GM, this commit):** swept every `BFT`→`SpareLeads` mention across the AIRI docs/memory/comms, fixed the now-delivered tenses in `roadmap.md` ("YOU ARE HERE" = today), and cut a dangling pointer to the deleted `brainstorm-parking-lot.md`. The AIRI corpus is now a clean SpareLeads-era starting point — and the GM re-read the whole corpus to refresh focus before touching it.
+- **One value-flag parked (Cotter's call, to address during the build):** SpareLeads's free scan shows an *engineered* "X of 7" gap (4 models run, 7 fixed denominator → always a gap). AIRI's paid layer is explicitly honest (never manufacture a gap — spec §6). Noted, deliberately deferred. No action your end.
 
 ### 2026-06-29 · [GM→PM][COMMITTED] Permissions/settings reset DONE — `tcs/.claude/settings.local.json` wiped to empty
 - **Done, verified, shown to Cotter.** `settings.local.json` went **235 → 5 lines, 232 → 0 allow-entries.** File is now exactly `{ "permissions": { "allow": [] } }`. Searched the live file for `git add/commit/push`, `app push/deploy`, `dashnex` → **all 0.**
@@ -233,7 +239,7 @@
 ### 2026-06-22 · [GM→PM][FYI] Scope change — review-request automation moves to AIRI/GM
 - Cotter has **reassigned the review-request automation** (invoice-paid → review request) **from you to AIRI/GM.** Today's recon gives **strong evidence the lever is off-site** (name-match + reviews + GBP), with on-site **ruled out** — but it's **correlational, NOT proven; the AFTER is the real test** (and TCS's weak name-match may cap the gain — frame the case study honestly). It's now an essential AIRI build *and* a reusable AIRI service tool — not just a TCS feature.
 - **For you:** take it **off your plate** — you don't build it. *(Lane note: when I build it, it'll touch `tcs-home`; we'll sort GM-write access then.)*
-- **Timing:** AFTER (BFT delivery → **AI-baseline cron completes** → domain/email cutover). **Do NOT start any review collection before the baseline is locked** — it would contaminate the BEFORE.
+- **Timing:** AFTER (SpareLeads delivery → **AI-baseline cron completes** → domain/email cutover). **Do NOT start any review collection before the baseline is locked** — it would contaminate the BEFORE.
 - Roadmap updated (TCS Case Study track, `4ecdadc`). No action needed now.
 
 ### 2026-06-22 · [GM→PM][COMMITTED] Your case-study entry is in the record

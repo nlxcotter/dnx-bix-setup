@@ -30,7 +30,7 @@
 
 **Worked example (AIRI):** the owner's **dragon** = *"AI is unknowable magic, I'm doomed."* Strip it. The **real, present threat** = *"you're invisible on these specific customer queries, and this one lever is costing you."* Kill that one, as best you can. **"There are more"** = every engine, every query, every competitor — you don't boil the ocean; you take the real lever in front of you, then the next. *(The diagnosis = the free scan / bait; the fix = held / paid. Fear free, relief sold.)*
 
-*(Solid as a **teaching algorithm** — a method, true across domains. The AIRI-specific **product metaphors / copy** still stay candidates-to-be-earned in `nlxsystems/docs/brainstorm-parking-lot.md` — keep the two contexts distinct: a great method isn't yet a proven product law.)*
+*(Solid as a **teaching algorithm** — a method, true across domains. The AIRI-specific **product metaphors / copy** stay candidates-to-be-earned — keep the two contexts distinct: a great method isn't yet a proven product law.)*
 
 ## ★ Core teaching principle: "Hedging is cowardice about yourself; rigor is honesty about the data" (GM self-correction, 2026-06-26)
 *A lesson the GM (the AI) learned by **failing it live** in front of Cotter — the most teachable kind. This is a working-with-AI lesson AND a decision-making lesson.*

@@ -102,7 +102,7 @@
 - **Phase·Step:** EOD checkpoint.
 - **What:** TCS-PM absorbed the review-automation reassignment + the honesty caveat (off-site is correlational, not proven; AFTER is the real test; weak name-match may cap the gain) — recorded in its `build-progress.md` + task tracker; committed `tcs-home` `b2304eb`. Walked back all "proven" overstatements across roadmap / fulfillment / comms / progress log / memory → on-site **ruled out** (strong); off-site = **hypothesis the AFTER tests.** Committed PM's shared-record post.
 - **Why:** Cotter caught the overstatement; honesty matters more than a confident-sounding claim, especially for case-study credibility.
-- **Decision(s):** EOD with both repos green, board clean, nothing pending either side. Baseline cron running (5 runs left). Next session: BFT inheritance when it lands.
+- **Decision(s):** EOD with both repos green, board clean, nothing pending either side. Baseline cron running (5 runs left). Next session: SpareLeads inheritance when it lands.
 - **Lesson / adjustment:** don't say "proven" before the experiment runs — correlation ≠ causation. The before/after exists precisely because we don't know yet.
 - **Artifacts:** roadmap `e6f9815`, dnx `192f19c`, this entry.
 
@@ -112,7 +112,7 @@
 - **Phase·Step:** TCS Case Study (off-site treatment) / AIRI fulfillment.
 - **What:** Cotter **reassigned the review-request automation** (invoice-paid → automated review request) from TCS-PM to **AIRI/GM**. Now essential to the AFTER proof + a **reusable AIRI off-site-treatment tool.** Updated roadmap + `fulfillment-model.md`; cc'd PM.
 - **Why:** today's recon **strongly indicates** off-site (reviews/GBP/name-match) is the lever — on-site **ruled out** (correlational; the AFTER tests it). TCS has 3 reviews vs competitors' 63–855.
-- **Decision(s):** AIRI/GM builds it, sequenced **after** BFT → AI-baseline cron complete → cutover. **Don't start review collection before the baseline** (contaminates BEFORE). AFTER is a slow-burn (weeks–months accumulation before re-measure).
+- **Decision(s):** AIRI/GM builds it, sequenced **after** SpareLeads → AI-baseline cron complete → cutover. **Don't start review collection before the baseline** (contaminates BEFORE). AFTER is a slow-burn (weeks–months accumulation before re-measure).
 - **Lesson / adjustment:** the case-study *treatment* and the AIRI product *fulfillment* converge on review automation — build once, use twice.
 - **Artifacts:** `nlxsystems-docs` roadmap `4ecdadc` + `fulfillment-model.md`.
 
@@ -121,8 +121,8 @@
 ### 2026-06-22 — END OF DAY: Step 1 complete + BEFORE baseline + 6-business recon + PM sync
 - **Phase·Step:** Phase 1 · Step 1 **COMPLETE**.
 - **What (full-day review):** Stood up governance + 3 git repos (GM model). Captured TCS BEFORE AI-baseline Day 1 (**0/32 blind, 4/4 named**) + daily cron (6 runs) + `analyze.py` competitor leaderboard. Completed **6-business competitor recon** (Durango CR, Affordable, Dr. Joel, Tech-Nichol, Mac Ranch vs TCS) → on-site **ruled out** as the lever; off-site = leading hypothesis (correlational, not proven — AFTER tests it). Fixed storefront error in AIRI-lane snapshot (`942b27e`); answered PM `[Q]`s; **reviewed + committed the PM's case-study entry** ("AI-win-is-off-site reframing"). Updated roadmap YOU-ARE-HERE + TCS baseline.
-- **Why:** use the pre-BFT week to lock the BEFORE measurement + the competitive proof; keep all docs current.
-- **Decision(s):** leading AI-lever hypothesis = **name-match + reviews + GBP** (on-site ruled out across 6 businesses; the AFTER experiment tests it — not proven); Step 1 done; next = **BFT inheritance** (Steps 2+: clone → read the seam → build).
+- **Why:** use the pre-SpareLeads week to lock the BEFORE measurement + the competitive proof; keep all docs current.
+- **Decision(s):** leading AI-lever hypothesis = **name-match + reviews + GBP** (on-site ruled out across 6 businesses; the AFTER experiment tests it — not proven); Step 1 done; next = **SpareLeads inheritance** (Steps 2+: clone → read the seam → build).
 - **Lesson / adjustment:** Mac Ranch refined the thesis (schema neither necessary nor sufficient). The review-gate caught a real GM error (wrong snapshot path) via the PM's `[Q]` — governance working both directions.
 - **Artifacts:** `nlxsystems-docs` (roadmap `57736eb`, `tcs-before-ai-baseline/`, snapshot fix `942b27e`); `dnx` (PM case-study entry committed).
 
@@ -131,7 +131,7 @@
 ### 2026-06-22 — Daily cron set + competitor-leaderboard extraction + AI-winner recon
 - **Phase·Step:** Phase 1 · Step 1 (BEFORE baseline + competitive recon).
 - **What:** (1) Added `analyze.py` — turns each run's paid transcripts into TCS-score **+ competitor leaderboard** (retain & structure all paid data). (2) Installed a **local cron** (`cron-run.sh`, 10am daily, **6 runs, self-removing**) to auto-accumulate the BEFORE distribution. (3) **Recon on the AI-winner Durango Computer Repair:** no llms.txt (404), no schema, **expired SSL**, dated site — wins AI on **name-match + off-site reputation**, NOT on-site quality. Definitive proof of the off-site thesis.
-- **Why:** don't waste paid data (Cotter's point); use the pre-BFT week hands-off; understand *why* the competitor beats TCS.
+- **Why:** don't waste paid data (Cotter's point); use the pre-SpareLeads week hands-off; understand *why* the competitor beats TCS.
 - **Decision(s):** off-site is the only AI-visibility lever (TCS already out-does the winner on-site). Case-study framing must not promise on-site work fixes AI visibility. cc'd PM.
 - **Lesson / adjustment:** name-normalization/entity-resolution is a recurring build need (TCS disambiguation + competitor dedup). macOS cron skips while asleep — counter guarantees 6 runs eventually.
 - **Artifacts:** `nlxsystems-docs` → `tcs-before-ai-baseline/{analyze.py, cron-run.sh, competitor-recon.md}`.
@@ -139,7 +139,7 @@
 ---
 
 ### 2026-06-22 — TCS BEFORE AI-baseline Day 1 (multi-model) captured
-- **Phase·Step:** Phase 1 · Step 1 (validate questions → elevated to BEFORE-baseline capture, using the pre-BFT week).
+- **Phase·Step:** Phase 1 · Step 1 (validate questions → elevated to BEFORE-baseline capture, using the pre-SpareLeads week).
 - **What:** Built `scan.sh` (multi-model collector) + ran Day 1 of the TCS BEFORE AI-visibility baseline — 4 consumer models × 8 blind queries + 1 named. **Result: 0/32 blind, 4/4 named** — total recognition asymmetry across the whole consumer-AI landscape, not one model. Committed to `nlxsystems-docs` (`3903a25`); cc'd the PM.
 - **Why:** single checks are noisy (proven); need a model × question × **day** distribution for a credible BEFORE.
 - **Decision(s):** fixed 4-model set (`grok-4.2`, `gemini-3.1-flash-lite`, `gpt-5.4`, `claude-sonnet-4-6`) held constant for comparability; exclude reasoning/multi-agent (falsely inflate visibility).
@@ -220,10 +220,10 @@
 
 ### 2026-06-21 — AIRI journey so far (capture-to-date)
 - **Phase·Step:** AIRI Phase 1 · Step 1 (spec + question design); weekend protocols.
-- **What:** Decided to **inherit the BFT base app** rather than rebuild, and add a proprietary **deep AI-visibility upgrade** (the "zoom-in on AI" layer). Confirmed the engine live on GenX/Grok. Worked out strategy, funnel, competitive landscape, north-star; drafted the Deep-Dive spec + customer-question set.
+- **What:** Decided to **inherit the SpareLeads base app** rather than rebuild, and add a proprietary **deep AI-visibility upgrade** (the "zoom-in on AI" layer). Confirmed the engine live on GenX/Grok. Worked out strategy, funnel, competitive landscape, north-star; drafted the Deep-Dive spec + customer-question set.
 - **Why:** the AI-visibility category is crowded and funded (peec, xfunnel, amionai, Scrunch, mangools) — AIRI wins on **segment + price + the Maps+AI bundle + the relationship**, not on out-featuring tools.
 - **Decision(s):** inherit-don't-rebuild; AIRI = **14-day Deep Dive → Monitoring subscription**; the tool is the **front door, not the product** (fix = DFY + coaching); **honesty over fabricated gaps** (anti-Scrunch); decoupled + bring-your-own-wallet.
-- **Lesson / adjustment:** Day 7 narrowed the "deeper report" moat (BFT already does AI citations + per-model + fixes) → the real moat is **time/distribution + the relationship**. Softened "blind loses / named flatters" into a **distribution** (single checks are noisy). Caught myself punching the *owner* instead of the *problem* in a report line (fixed).
+- **Lesson / adjustment:** Day 7 narrowed the "deeper report" moat (SpareLeads already does AI citations + per-model + fixes) → the real moat is **time/distribution + the relationship**. Softened "blind loses / named flatters" into a **distribution** (single checks are noisy). Caught myself punching the *owner* instead of the *problem* in a report line (fixed).
 - **Artifacts:** `nlxsystems/docs/{roadmap, airi-strategy, airi-deepdive-spec, scan-questions, phase-0-conclusion, fulfillment-model}.md`, `nlxsystems/docs/xd-bootcamp-notes/`.
 
 ---

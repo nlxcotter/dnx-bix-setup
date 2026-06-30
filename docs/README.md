@@ -21,13 +21,13 @@ Non-coders / would-be SMB owners who want to build something **sellable** with A
 
 ## Guardrails (IP + relationships)
 - **Your journey and original reasoning are YOUR IP** — the AIRI strategy, the decisions, the pivots, the fears. Log those freely.
-- **The bootcamp's specific curriculum / the BFT app are the instructor's.** Credit the bootcamp as a *source*; never clone or resell his course.
+- **The bootcamp's specific curriculum / the SpareLeads app are the instructor's.** Credit the bootcamp as a *source*; never clone or resell his course.
 - **Mind the partnership.** You may partner with the instructor (AIRI Motion 2). Don't let a "launch with DashNex + AI" training read as competing with his bootcamp — position yours as a *practitioner's logged case study* ("watch me actually do it"), or clear it with him.
 
 ## The three projects (so context stays clean, not "contaminated")
 | Folder | Project | Role |
 |---|---|---|
-| `Systems/nlxsystems` | **AIRI** | the product (deep AI-visibility upgrade on the BFT base app) |
+| `Systems/nlxsystems` | **AIRI** | the product (deep AI-visibility upgrade on the SpareLeads base app) |
 | `Systems/tcs` | **TCS rebuild** | the case study / proof asset |
 | `Systems/dnx-biz-setup` | **this** | the meta-log → future training program |
 
