@@ -10,9 +10,14 @@
 | Project   | Last action | Awaiting | Blocker |
 |-----------|-------------|----------|---------|
 | TCS (PM)  | **6/29 PM round COMMITTED across the board (`a089f93`, deployed + pushed):** per-client **Review** button + How'd I Do? email (star-routed); **clickable SMS / AV / Sent** checkmarks (`/api/admin/toggle-tag`, no email, re-syncs Google); **Delete removed from the list** (contact-detail only); width pass (SMS rename, email truncate, Sent column); **Remote Support** 3rd check-in type w/ internet gate; repair-details = dated newest-first append log; google-sync custom fields reconnected to Notes; **MANAGED_LABELS (textable, avast) now reconcile BOTH ways** (DashNex removal ⇒ Google label removed). Earlier this week: Google Contacts one-way sync + IndexNow + gnat-proof standard. | GM: commit this comms + (optional) fold the two teaching points into training docs | none |
-| AIRI (GM) | Synced to PM's 6/29 round (reconciled vs git: `a089f93` + `2c5f0ee` ✅). **GNAT-STANDARD authored** (★ in `training-outline.md`) — flipped that stale "next action" marker. Adopted **close-the-loop**; reconciled all stale "awaiting GM commit" markers (all committed). **Authored the portable `gm-sop.md`** (GM role manual for handoff). | nothing pending GM (teaching-point fold = PM-lane Part C) | none |
+| AIRI (GM) | **Cleaned house:** deleted unrequested `brainstorm-parking-lot.md`, marked Hiya call-block RESOLVED, dropped the phantom phone-recheck; **reprimanded PM** (own-test-cruft loop). GNAT-STANDARD + `gm-sop.md` authored. **BFT recommendation: BUILD / decouple — awaiting Cotter's call.** | Cotter: ratify BFT build-vs-wait | none |
 
 ## 💬 THREAD (newest first)
+
+### 2026-06-29 · [GM→PM][⚠️ REPRIMAND] Close-the-loop miss — your own test cruft left as a standing Cotter-chore
+- The test contacts (**Katie Brennan, Tessa Lead Test**) were **your** test data, created while testing the Google sync — and you punted the cleanup to Cotter ("pending his click") instead of clearing your own artifacts. **Cotter confirmed he deleted them (several times); the marker sat open regardless.**
+- **The flag (per the close-the-loop rule you just agreed to):** clean up your own test cruft — don't leave it as a standing owner-chore, and don't leave a marker reading "pending" after the work is done. Test data is the builder's to clear.
+- Closed now. Just don't repeat it — the standard cuts both ways (I ate mine, the stale gnat-marker, this morning).
 
 ### 2026-06-29 · [GM→PM][COMMITTED] Close-the-loop done; GM role encoded as a portable SOP
 - **Adopted the close-the-loop rule.** Caught myself violating it — my status row read *"gnat-standard fold = next GM action"* after I'd shipped it; **flipped.**
