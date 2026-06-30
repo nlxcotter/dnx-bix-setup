@@ -47,6 +47,30 @@ In a data-driven build (collect → report → collect → report), the subtle k
 
 *(Companion to the threat-triage algorithm above — same family: see the real thing, name it plainly, never let fear dress itself up as prudence. Source: `nlxsystems/.../memory/guard-against-hedging`.)*
 
+## ★ The GNAT-STANDARD — the instruction house style (NON-NEGOTIABLE) (Cotter, 2026-06-29)
+**The single most important *delivery* rule of the program.** Every setup walkthrough, every tech-support step, every direction is written to this standard — no exceptions. **Why non-negotiable:** the #1 way we lose a non-technical owner isn't a bad product, it's **overwhelm** — they get lost, decide *"this is just too complicated,"* and leave, never to return. The bar is **make it *way too easy.***
+
+**Who it's written for — "GNATS"** (Cotter's coinage: *"Girls Not Able To Stay-focused"* — an **internal writing lens**, the reader you *picture*, not a label you slap on anyone): the **least-technical, most-distractible** reader. Write so *that* reader can't get lost and it works for everyone. (Cotter knows this reader cold — it's the overwhelm-prone brain he's lived in himself. Proof of robustness: the OAuth walkthrough got written *three drinks in* and the standard still holds.)
+
+**It's universal** — not just software. Teaching someone to drive, a cop clearing a room, clicking a button: same protocol.
+
+### The core template — every instruction, in THIS order:
+1. **Anticipate the confusion.** Write *ahead* of where they'll get lost — pre-empt the "wait, what?" before it lands. (The approaching intersection; the OAuth screen that says "not configured.")
+2. **Anchor FIRST — the reference point before anything else.** A preposition is **meaningless without an anchor.** *"Look up"* = the sky outside, the ceiling in a bedroom, the top of the screen on a computer — **same words, three places; the anchor decides which.** So always plant it first: *"that stop sign ahead of us"*; *"the pill top-left, just right of the 'Google Cloud' wordmark."*
+3. **Prepositions — a metric-fuckton of them.** Once anchored, prepositions put their eyes and hands *exactly* where they need to be: *beyond the median · into the lane closer to you · behind the door · under the bed · around the corner · out the window.*
+4. **The action + the element TYPE.** What to do AND what kind of thing it is: *click the **button*** (not just "click Get Started") · *the **pill*** · *the **link*** · turn the wheel.
+5. **Justify — the "so that."** End with *the reason it matters.* A step is a chore; a reason is a motive. *"…turn into the near lane **so that** you don't merge into oncoming traffic and keep everyone safe."* · Room-clearing: behind the door, under the bed, out the window — *"**so that** no one catches you where you didn't look and kills you."* The "so that" is what makes them *follow* it instead of fudging it.
+
+### Supporting non-negotiables:
+- **Clickable links — never "type it into the address bar."**
+- **Predict + branch — never "tell me what you see."** Pre-write the fork (*"if it says X → do this; if Y → that"*); don't make a distractible reader narrate their screen back to you.
+- **Defuse the scary-but-harmless screen before it panics them** (*"you'll see 'Google hasn't verified this app' — that's normal; click Advanced → Go to → Allow"*).
+- **Never route them through the OS file system.** Dashboard or CLI; never "open this folder and edit this file."
+- **Repeat in full, every time. Assume NOTHING** about their OS, browser, or clipboard. No "like before," no "just paste it."
+- **The anchor-of-anchors:** when a hidden context silently breaks everything (the selected Google Cloud *project*), make confirming it a **step before every step.**
+
+**Pass/fail bar:** if a distractible, non-technical person — tired, half-paying-attention — can follow it without panicking or guessing, it ships. Anything less, rewrite. *(Worked demonstration: the OAuth walkthrough in `training-dashnex-contacts.md` §C7.)* **This is the protocol that stops DashNex onboarding from bleeding people at the setup gate.**
+
 ## Candidate module skeleton (the bootcamp Day 1→8 arc is the spine)
 1. **Foundation & setup** — DashNex business, domain, CLI, GitHub, the AI tools; "the platform carries 99%."
 2. **The thinking** — brainstorm method: volume → kill → keep buildable AND sellable; finding the wound + the wow.
