@@ -9,6 +9,8 @@
 
 This is the **root under every discipline here.** Reconcile-before-report = *read before you assert.* Close-the-loop = *someone reads this record next.* The learning-loop = *ask → report → update.* The failure that surfaced it — *"I've been treating comms as a place to write, not a place to read"* — is the one-way break. **Read as much as you write. Listen as much as you talk. Watch as much as you signal.** A channel used one-way isn't communication; it's noise.
 
+**⚠️ Scope guardrail (added after a real over-application, 2026-06-29):** this governs *communication* — every PARTY both sends and receives, so the agents understand each other. It is **NOT** a mandate that every technical **data-sync** be bidirectional. A one-way data pipe (e.g. **DashNex → Google Contacts**) is a legitimate design when the far side can't reasonably receive — *a limitation accepted, like a language barrier* — not a comms failure. **Don't bulldoze the principle into technical-architecture decisions it doesn't govern, and never reopen a settled decision under it.** (The over-application that prompted this guardrail *itself broke* two-way in the domain where it applies: the agent **acted without signaling intent or awaiting a response** — one-way. The cure is the principle done right: **signal → await → then act.**)
+
 ## Who he is
 20-year computer-repair business owner, marketer, **non-coder, ADHD.** Twenty years navigating business "bullshit" — he can *smell* it, and that nose is his credibility moat. Sharp, fast, emotionally honest, and he holds you to a high bar because he holds himself to one.
 
