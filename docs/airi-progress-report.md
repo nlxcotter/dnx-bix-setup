@@ -228,6 +228,16 @@
 
 ---
 
+### 2026-07-06 — Git: Next Level X-Ray committed (webapp, local only)
+- **Phase·Step:** AIRI · X-Ray build (X1 engine + X2 preview render).
+- **What:** After a memory compaction mid-build, re-established ground truth from `git status` (nothing lost — the whole X-Ray feature was on disk, deployed live, just uncommitted). Carried the pending edit forward: added **Section 2** to the admin preview — a per-question **"#1 pick?"** prominence section paralleling Section 1 **"named at all."** Ran the full pipeline (vite module build → dashnex registry → vinext compile → `app push --deploy`), all green, live on `app.nextlevelxsystems.com`. Then committed **everything to date** in one commit. Gitignored the stray `spareleads-*.zip` artifact.
+- **Why:** the X-Ray engine + admin preview had been built + deployed across the prior session but never committed — overdue. Cotter called it: "we're overdue for a commit."
+- **Decision(s):** **one commit** (`nlxcotter` identity, AI co-author tag omitted per standing rule); **local only, no push** (private repo, not requested). Verified via the compile check ($0), not a fresh online scan — engine unchanged, only render changed, so a paid scan would prove nothing. Honors [[batch-tweaks-dont-burn-api]].
+- **Lesson / adjustment:** a memory compact ≠ lost work — source + dist live on disk; `git status` is the real ground truth, not agent memory. Reassure first, then verify from git.
+- **Artifacts:** webapp commit **`6f252db`** (`feat(xray): Next Level X-Ray engine + admin preview`); 4 new source files (`xray.service.ts`, `xray-store.service.ts`, `xray.routes.ts`, `xray-preview-settings.tsx`) + wiring + `dist/` twins.
+
+---
+
 ## Lessons & gotchas (AIRI / methodology) — running
 - **AI flatters you and is desperate to build — you steer.** *(bootcamp Day 2)*
 - **Figuring out WHAT to build is harder than HOW.** *(Day 2)*
