@@ -238,6 +238,16 @@
 
 ---
 
+### 2026-07-07 — Git: X-Ray customer surface + Products/Offers wiring committed (webapp, local)
+- **Phase·Step:** AIRI · X-Ray customer surface (credit-gate + upsell walk + Products/Offers).
+- **What:** A marathon session built the full X-Ray customer surface: the credit-gate (one credit = one run, refund on fail, tier-aware, double-submit guard + customer endpoints), the upsell "walk" landing page rebuilt on the funnel design system (gold + indigo, fear-first PAS, the x-ray metaphor, before/after proof, report-gen progress bar, three-way fork), and the X-Ray Sales admin (one-time + monthly Product/Checkout IDs, validated on save). Cotter created both DashNex products + offers **live** following Method #1 — **One-time $47 / 1 run**; **Monthly $97/mo / 4 runs, resets monthly** — and all four config fields validated **green**. Committed on his "commit everything" request.
+- **Why:** overdue after a long build session; lock in the work.
+- **Decision(s):** **two commits** (`nlxcotter` identity, AI tag omitted): `feat(xray)` **880fddb** (the feature) + `chore(skills)` **7806ef2** (the two landing-page skills Cotter had me install). **Local only, no push** (private DashNex repo). `build-methods.md` #2–3 stay parked (teachable-gated, not swept in).
+- **Lesson / adjustment:** the DashNex **four-ID trap** bit us live — Offer ID, Variant ID, Checkout ID, Product ID all look alike and live on different screens; the app needs the **Product ID** (from the Products list), NOT the Offer or Variant ID. Also: the **monthly-subscription variant** (variant Reset Period → Monthly + offer Price type → Subscription) is now **verified in prod** with a live $97/mo checkout — ready to fold into Method #1 on Cotter's "teachable" word.
+- **Artifacts:** webapp commits **880fddb** + **7806ef2**; DashNex products/offers (one-time + monthly, both green); the `/x-ray-preview` walk.
+
+---
+
 ## Lessons & gotchas (AIRI / methodology) — running
 - **AI flatters you and is desperate to build — you steer.** *(bootcamp Day 2)*
 - **Figuring out WHAT to build is harder than HOW.** *(Day 2)*
