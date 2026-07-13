@@ -46,4 +46,40 @@
 3. **Checkout ID = the tail of the Copy-link URL** (there is no "Copy ID").
 
 ---
-*Stood up 2026-07-01 by the GM. Governed by `Systems/canon/governance.md`.*
+
+### 2 · Send a transactional email on DashNex — and why it silently fails
+*Verified live on TCS; teachable-authorized by Cotter 2026-07-06.*
+
+**What it does & why it matters.** It sends an email straight from your app — a receipt, a review request, a notification — with no mail server to run. You call one function and DashNex delivers it. **The trap that eats hours:** if the `from` address isn't a sender or domain **verified inside DashNex**, `send()` returns with **no error at all** and the email simply never arrives. Getting the `to` right is necessary but **not sufficient** — an unverified `from` fails **silently**.
+
+**How to send:**
+- `getMailer().send({ from, to, replyTo, subject, html, text })` from `@dashnex/core`.
+- Point `from` at a **verified** sender: `const from = process.env.DEFAULT_EMAIL || '<your-verified-address>'`.
+
+**⚠️ The silent-failure trap.** *No error + nothing arrives* === the `from` is unverified. Fix it in DashNex's **email / sender settings** (verify the sender or domain) **before** touching code — no code change helps while `from` is unverified.
+
+**Hooks** (to intercept or customize a send): `core.before_mailer_send`, `core.before_send_transactional`.
+
+**The trap, one line:** unverified `from` → `send()` succeeds silently, mail never lands. Verify the sender first.
+
+---
+
+### 3 · Contacts / CRM on DashNex — the custom-field event trap + safe upsert
+*Verified live on TCS; teachable-authorized by Cotter 2026-07-06.*
+
+**What it does & why it matters.** It lets your app read and write DashNex Contacts (your CRM) — create a contact, update fields, tag them — and keep an outbound sync (e.g. to Google Contacts) in step. **The trap that breaks the sync:** DashNex fires **NO event when a custom-field VALUE is written**, so a passive listener meant to trigger your sync **never fires** on those writes — the data saves, but nothing downstream ever hears about it.
+
+**The service + a safe upsert:**
+- Service = `getContacts()` from `@dashnex/contacts`. **Email is the unique identity key.**
+- Upsert: `getContactByEmail` → `updateContact` or `createContact`.
+- A custom field needs a **definition (label + key)** before values can store; the **values** live in a separate `contactFieldValues` store (keyed by contactId + fieldKey), which is why no event fires for them.
+
+**⚠️ The event trap.** DashNex emits events for contact **created / updated / deleted / get** and the **tag lifecycle** — but **nothing for a custom-field-value write.** So any outbound sync or side-effect must be **pushed explicitly at the write site**, right after you write the field — a listener won't catch it.
+
+**Corollaries (each a real trap):**
+1. **Push by known contact ID, not an email-upsert** — a re-push keyed on email spawns downstream **duplicates**.
+2. **Blank-wipe guard — "blank = keep."** Patch only non-blank fields, so a partial re-submission can't **erase** stored data.
+3. **Tag ops DO emit events** — safe to drive side-effects off tag add/remove (unlike custom-field values).
+
+---
+*Stood up 2026-07-01 by the GM. Methods 2–3 curated 2026-07-06 (submitted from the TCS lane, teachable-authorized by Cotter). Governed by `Systems/canon/governance.md`.*
