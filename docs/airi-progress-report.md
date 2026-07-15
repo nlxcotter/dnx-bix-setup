@@ -248,6 +248,26 @@
 
 ---
 
+### 2026-07-14 — Git: Xcavate sales page + strategy-call booking + report combine committed (webapp, local)
+- **Phase·Step:** AIRI · launch-prep surface (sales page, booking, report consolidation, model panel).
+- **What:** A long session's worth of launch-prep work, committed after the booking page passed live review. Built the `/xcavate-promote` sales page (Cotter's real copy voice, GNAT standard, brand woven in), added the home-page "Get Started Now" CTA (home stays `noindex` until Cotter says he's officially launching), stood up the `/book` strategy-call page on Zoom Scheduler (auto-generates the Zoom link, drops it on his calendar, nothing routes through us), combined the owner's two X-Ray report blocks into one with a "Run a fresh X-Ray" re-scan so history accumulates, swapped the unfinished monthly for "Monthly Tracking Coming Soon", built the X-Ray visibility-over-time chart + per-scan run-history API, upgraded the monthly model panel (grok-4.5 · gpt-5.6-terra · claude-sonnet-5 · gemini-3.1-pro), and hid the DFY button until it has a destination.
+- **Why:** Cotter's launch call: stop waiting on the full flow, ship the pieces that are ready. He green-lit the commit once `/book` verified clean ("it'll work").
+- **Decision(s):** **one commit** (`nlxcotter` identity, AI co-author tag omitted per standing rule); **local only, no push** (private repo). Booking page verified via live review, not a paid scan ($0). Zoom booking went **light** on purpose (see lesson).
+- **Lesson / adjustment:** Zoom Scheduler's embed exposes only background/text/button colors + font + size, **no dark-mode lever**; a near-black card fights Zoom's unremovable white iframe chrome and buries the text in grey-on-black, so a **light card** that blends into Zoom's white frame wins. Also closed a **stray `preview/vite` watcher** left running since 07-05 (loose-end sweep at the end of the block, per [[close-loose-ends]]).
+- **Artifacts:** webapp commit **`db4d597`**; new `/xcavate-promote` + `/book` pages; home CTA; X-Ray history API + trend chart; monthly model panel. Prior session's funnel/dashboard/admin/presence work already landed in **`f833bcb`**.
+
+---
+
+### 2026-07-15 — Launch-readiness audit + fixes committed (webapp, local)
+- **Phase·Step:** AIRI · pre-launch hardening.
+- **What:** Ran a 3-agent end-to-end audit of the whole Xcavate/X-Ray funnel to answer Cotter's "is it launch-ready" question, then fixed + shipped + committed the gaps: removed the temp `/api/xray-recover` probe (a hardcoded-token hole that dumped stored customer scans); made the X-Ray "What we verified" **website + hours** checks REAL (they claimed "checked" but only phone was actually verified) via a domain match + a cheap fact-check pass; built generic **legal pages** (`/terms` `/privacy` `/disclaimer`); replaced the placeholder "Powered by Google" text with the compliant **monochrome** wordmark (Google's dark-background version is monochrome, not the four-color logo); killed a **"No signup" lie** on the scan hero; **swept em-dashes** out of ALL customer-facing copy (report, both PDFs, teaser, action plan, errors, the generated X-Ray question) while leaving AI-verbatim transcript, code comments, and empty-value markers untouched; fixed the `/book` Zoom page (light card + sizing + font).
+- **Why:** launch-readiness. Cotter wants a beta launch and asked for a full audit of what's unfinished.
+- **Decision(s):** **one commit** (`nlxcotter` identity, AI tag omitted); **local only**. Committed **`46d0419`** on top of **`db4d597`**. Left the scan resolution dead-end as a **beta watch-flag** (verify before fixing: the invisible path works; only genuinely-unconfirmable businesses hit the dead-end).
+- **Lesson / adjustment:** two audit-driven lessons. (1) A card that CLAIMS a check must actually run it, the website/hours "Checked against your listing" captions were decoration; honesty means the code backs the copy. (2) A house rule violated on surfaces you haven't hit is still violated, a single-surface fix is not a fix; sweep the whole product. Plus the **AI-verbatim exception**: never sanitize the assistants' own words, that would fake the evidence.
+- **Artifacts:** webapp commit **`46d0419`**; new `/terms` `/privacy` `/disclaimer`; deleted `xray-recover.routes.ts`; `xray.service.ts` website/hours verification. Receipt-email finding: DashNex `@dashnex/offers` already auto-sends the built-in Invoice email on checkout (owner personalizes the copy); a custom delivery email is optional (tomorrow's focus).
+
+---
+
 ## Lessons & gotchas (AIRI / methodology) — running
 - **AI flatters you and is desperate to build — you steer.** *(bootcamp Day 2)*
 - **Figuring out WHAT to build is harder than HOW.** *(Day 2)*
