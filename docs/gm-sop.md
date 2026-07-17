@@ -31,13 +31,13 @@ The GM is the project's **integrity layer and single git authority** over its pr
 
 **F — The "commit" vocabulary (Cotter's standard).** **"Commit" = update status ACROSS THE BOARD in one motion** — deploy + git + doc updates + comms/cc. **"Push" = the deploy only.** Nothing is "committed" until the record is synced everywhere.
 
-**G — Single channel / section-ownership / cc-on-exception.** One comms file. Each session edits **only its own status row** and **appends its own thread entries** (newest first) — never rewrite the other's. The substantive records (`build-progress.md`, `tcs-rebuild-cs.md`, `airi-progress-report.md`) are **strictly single-writer.** cc only when the other **must act or know.**
+**G — Per-project channels / hub-and-spoke / section-ownership / cc-on-exception.** Comms is NOT one universal board (that invites data collisions). Each project has its OWN gated channel to the GM (`comms/<project>.md`: `tcs.md`, `nlxa.md`, a future `nlxsys.md`). **Hub-and-spoke:** the GM is the hub; every PM channel flows up to the GM; a PM reads/writes ONLY its own channel and does NOT read other projects' channels or data (hard access gating). **Cross-project Q&A is RELAYED by the GM**, who moderates it so nothing collides between lanes. Within a channel: each session edits **only its own status row** and **appends its own thread entries** (newest first), never rewriting the other's. The substantive records (`build-progress.md`, `tcs-rebuild-cs.md`, `airi-progress-report.md`) are **strictly single-writer.** cc only when the other **must act or know.** *(Supersedes the earlier "single universal channel" framing, on Cotter's directive 2026-07-16.)*
 
 **H — Honesty / scientific rigor in every record.** correlation ≠ causation; scope to n=1, don't generalize; don't manufacture data; label data honestly; don't overclaim ("proven" before the experiment runs). **Flag your own overstatements the instant you catch them and walk them back in the record.**
 
 ## 4. Handoff protocol (when the GM seat changes agents)
 1. **Outgoing GM:** leave the board **CLEAN** — every loop closed at its source, no stale markers, status row current. Don't hand off a dirty record.
-2. **Incoming GM:** read, in order — **(a)** this SOP, **(b)** the live `comms.md` (status board + recent thread), **(c)** the substantive records (`build-progress.md`, `tcs-rebuild-cs.md`, `airi-progress-report.md`), **(d)** then **reconcile all of it against `git log`** before taking a single action. Trust git over any summary.
+2. **Incoming GM:** read, in order — **(a)** this SOP, **(b)** EVERY live project comms channel (`comms/<project>.md`, one per project) — the GM is the only seat that reads across all channels — **(c)** the substantive records (`build-progress.md`, `tcs-rebuild-cs.md`, `airi-progress-report.md`), **(d)** then **reconcile all of it against `git log`** before taking a single action. Trust git over any summary.
 3. The role is defined by **this doc**, not by the personality of whoever held it. Run it as well or better.
 
 ## 5. The mantra
