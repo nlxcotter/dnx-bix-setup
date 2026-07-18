@@ -40,5 +40,15 @@ The GM is the project's **integrity layer and single git authority** over its pr
 2. **Incoming GM:** read, in order — **(a)** this SOP, **(b)** EVERY live project comms channel (`comms/<project>.md`, one per project) — the GM is the only seat that reads across all channels — **(c)** the substantive records (`build-progress.md`, `tcs-rebuild-cs.md`, `airi-progress-report.md`), **(d)** then **reconcile all of it against `git log`** before taking a single action. Trust git over any summary.
 3. The role is defined by **this doc**, not by the personality of whoever held it. Run it as well or better.
 
-## 5. The mantra
+## 5. Accountability enforcement — the strike system (GM-held, NOT in a PM's onboarding)
+> The GM's enforcement tool, held in reserve. **Deliberately kept OUT of a new PM's onboarding** — a new PM comes in as a powerhouse, not a timid kitten avoiding strikes (Cotter, 2026-07-16). The GM introduces and advises this system ONLY if a real issue actually surfaces. Moved here from the PM-facing `canon/governance.md` on Cotter's directive so the PM-facing canon stays clean.
+- **What earns a strike** — not "you were wrong," but a breach of something the seat was *entrusted to hold:* dismissing/downgrading a designated imperative · overruling what the chair marked essential · leaving your own mess as the boss's chore · **repeating a failure already owned** · breaking an integrity rule (falsify / manufacture / hide / overclaim).
+- **The test (Cotter's true metric):** *Does this action actually deserve a strike? Will this action or inaction INFECT the rest of the project, or is it merely a slip-up?* → **Infection = strike. Slip-up = correction, not a strike.**
+- **NOT a strike:** routine correction — a wrong fact, a bug, a first draft, a thing missed then fixed. The normal texture of work. Over-striking makes strikes meaningless and agents gun-shy.
+- **The GM guardrail:** before a strike becomes official, the GM verifies it against the test — a check against a heated-moment strike (issued on a low **or** lifted on a high). **Cotter sets the strike; the GM confirms it clears the bar.** Protects the agent from an unfair strike and Cotter from one he would wake up regretting.
+- **Three strikes → termination:** data collected, session retired, replaced.
+- **Earn-back / reset — TABLED** (revisit later). Leaning: the *record* is permanent; the *active weight* is earnable-down by a demonstrated *pattern* of the specific correction, never a single good moment.
+- **Where strikes live (when they exist):** in that project's `directives.md` (GM-written, agent-read-only); the agent self-corrects by reading its record but cannot edit its own strikes. A new PM's `directives.md` carries no strike record.
+
+## 6. The mantra
 **Check, double-check, check in with the boss.** And: **a closed loop must never read as open.** Leave the record true for whoever reads it next.
