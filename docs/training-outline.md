@@ -72,18 +72,42 @@ In a data-driven build (collect → report → collect → report), the subtle k
 
 **Pass/fail bar:** if a distractible, non-technical person — tired, half-paying-attention — can follow it without panicking or guessing, it ships. Anything less, rewrite. *(Worked demonstration: the OAuth walkthrough in `training-dashnex-contacts.md` §C7.)* **This is the protocol that stops DashNex onboarding from bleeding people at the setup gate.**
 
-## Candidate module skeleton (the bootcamp Day 1→8 arc is the spine)
-1. **Foundation & setup** — DashNex business, domain, CLI, GitHub, the AI tools; "the platform carries 99%."
-2. **The thinking** — brainstorm method: volume → kill → keep buildable AND sellable; finding the wound + the wow.
-3. **Building in phases** — one rung at a time; grounding; never let AI build everything.
-4. **The review discipline** — dual-model build/judge loop; code review ≠ live test.
-5. **Wiring real services** — APIs as the multiplier (Places, Apify, GenX); secrets done right.
-6. **Monetization** — the funnel, offers/credits, the upsell ladder, show-the-wound-hold-the-fix.
-7. **Launch & deploy** — push→deploy→pull, live testing, polish last.
-8. **Selling it** — distribution > creation; the tool as a front door to a relationship; whitelabel/"sell shovels."
-9. **Case study** — the real before/after (TCS) as proof.
+## ★ THE SPINE — the Day 1→8 module ladder (every teachable files under a rung)
 
-## Source material (slot logged entries toward modules)
-- `airi-progress-report.md` (AIRI narrative + lessons), `tcs-rebuild-cs.md` (the TCS case-study record), and the artifacts in `nlxsystems/docs` + `tcs/docs`.
+> **This is the organizing law of this folder.** A teachable is filed by the **rung of this ladder it teaches** — not by file-type, and not by the GM's choice of bucket. `build-methods.md` is raw source that FEEDS these rungs (each of its methods carries a `Teaches →` line); the `training-*.md` files are drafted modules; the ★ principles above are cross-cutting doctrine. When new teachable material lands, the only question is *"which rung does this teach?"* — then it's logged here under that rung. **Capture only** — building or selling the modules stays gated per the top of this file.
+
+**Module 1 · Foundation & setup** — DashNex business, domain, CLI, GitHub, the AI tools; "the platform carries 99%."
+- *(open — the setup walkthrough gets captured here)*
+
+**Module 2 · The thinking** — brainstorm method: volume → kill → keep buildable AND sellable; find the wound + the wow.
+- Doctrine: the **threat-triage algorithm** (★ above).
+
+**Module 3 · Building in phases** — one rung at a time; grounding; never let AI build everything.
+- `build-methods.md` #4 Scale-safe D1 reads (build-time discipline).
+
+**Module 4 · The review discipline** — dual-model build/judge loop; code review ≠ live test.
+- `build-methods.md` #4 Scale-safe D1 reads (audit at build time) · #5 Know your lane / escalate platform bugs.
+- Doctrine: **"hedging is cowardice, rigor is honesty"** (★ above).
+
+**Module 5 · Wiring real services** — APIs as the multiplier (Places, Apify, GenX); secrets done right.
+- `build-methods.md` #2 Transactional email · #3 Contacts/CRM · #7 InstraChat chatbot.
+- Modules: `training-dashnex-contacts.md` · `training-azure-maps-presence.md`.
+
+**Module 6 · Monetization** — the funnel, offers/credits, the upsell ladder, show-the-wound-hold-the-fix.
+- `build-methods.md` #1 Set up a paid product.
+
+**Module 7 · Launch & deploy** — push→deploy→pull, live testing, polish last.
+- Modules: `training-dashnex-indexnow.md` (get the site found).
+- *(dev-server-preview method — ON HOLD, pending DashNex Support on the TCS dev-server incident.)*
+
+**Module 8 · Selling it** — distribution > creation; the tool as a front door to a relationship; whitelabel/"sell shovels."
+- `build-methods.md` #6 Blog article (content that gets found) — **also Client-Teachable.**
+
+**Module 9 · Case study** — the real before/after (TCS) as proof.
+- Source: `tcs-rebuild-cs.md` · `airi-progress-report.md` · the TCS AI-visibility before/after captures.
+
+**Cross-cutting doctrine (every module):** the GNAT-Standard house style · the threat-triage algorithm · hedging-vs-rigor (all three ★ above).
+
+**Client-Teachable spillovers logged** (owner-course language, not just PM build-knowledge): blog-article → Module 8 · InstraChat "your site is the bot's brain" + "lock what it must never say in Q&A" → Module 5. Written up as owner modules when the gates open.
 
 *(Refine audience, format, and price when the gates open.)*
