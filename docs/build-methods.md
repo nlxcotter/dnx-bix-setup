@@ -176,4 +176,16 @@
 **The rule:** a DashNex chatbot goes live only when the agent is **both Active AND Chat-Bubble-enabled** AND the loader actually ships to the page — verify with a live `enabled-agent` check **and** a grep of the live HTML, never the dashboard alone.
 
 ---
-*Stood up 2026-07-01 by the GM. Methods 2–3 curated 2026-07-06; methods 4–7 curated 2026-07-23 (submitted from the TCS lane 07-06 → 07-21, teachable-authorized by Cotter). Every method is filed to a rung of the training spine (`training-outline.md`). Dev-server-preview is a submitted method held on the back burner pending DashNex Support on the TCS dev-server incident. Governed by `Systems/canon/governance.md`.*
+
+## Platform facts and limits (constraints to design around, not methods)
+
+### DashNex credits are per-Business and do NOT transfer between Businesses
+*Confirmed by DashNex support 2026-07-28 (Cotter asked directly). Teachable-authorized by Cotter.*
+**Teaches → Module 1 (Foundation & setup).**
+
+Credits live inside a single DashNex **Business** and cannot be moved to another one. A second Business starts from zero, and there is no way to shift a balance over. **Plan your account structure before you split anything.** If a client, a brand, or a side venture might run its own DashNex Business, decide up front where the credits should sit, because you cannot rebalance later.
+
+**⏳ Open (watch):** Cotter has a pending question with support on whether this becomes possible under the **new DashNex ID system.** Treat "no transfer" as CURRENT, not permanent, and update this line when support answers.
+
+---
+*Stood up 2026-07-01 by the GM. Methods 2–3 curated 2026-07-06; methods 4–7 curated 2026-07-23 (submitted from the TCS lane 07-06 → 07-21, teachable-authorized by Cotter). Platform-facts section added 2026-07-28 (DashNex credits are per-Business, teachable-authorized by Cotter). Every method is filed to a rung of the training spine (`training-outline.md`). Dev-server-preview is a submitted method held on the back burner pending DashNex Support on the TCS dev-server incident. Governed by `Systems/canon/governance.md`.*
