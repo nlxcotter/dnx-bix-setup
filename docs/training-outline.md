@@ -77,7 +77,8 @@ In a data-driven build (collect → report → collect → report), the subtle k
 > **This is the organizing law of this folder.** A teachable is filed by the **rung of this ladder it teaches** — not by file-type, and not by the GM's choice of bucket. `build-methods.md` is raw source that FEEDS these rungs (each of its methods carries a `Teaches →` line); the `training-*.md` files are drafted modules; the ★ principles above are cross-cutting doctrine. When new teachable material lands, the only question is *"which rung does this teach?"* — then it's logged here under that rung. **Capture only** — building or selling the modules stays gated per the top of this file.
 
 **Module 1 · Foundation & setup** — DashNex business, domain, CLI, GitHub, the AI tools; "the platform carries 99%."
-- *(open — the setup walkthrough gets captured here)*
+- Module: `training-dashnex-deploy-a-module.md` **Parts A to D** — confirming which business you are signed in to (the anchor-of-anchors), getting a module into the app, the two package-manager walls, and proving it builds before anything goes live.
+- *(Parts H onward are NOT foundation and are filed to Modules 5 and 6 instead, see those rungs.)*
 
 **Module 2 · The thinking** — brainstorm method: volume → kill → keep buildable AND sellable; find the wound + the wow.
 - Doctrine: the **threat-triage algorithm** (★ above).
@@ -92,12 +93,14 @@ In a data-driven build (collect → report → collect → report), the subtle k
 **Module 5 · Wiring real services** — APIs as the multiplier (Places, Apify, GenX); secrets done right.
 - `build-methods.md` #2 Transactional email · #3 Contacts/CRM · #7 InstraChat chatbot.
 - Modules: `training-dashnex-contacts.md` · `training-azure-maps-presence.md`.
+- *(open — `training-dashnex-deploy-a-module.md` **Part H**, the provider-key side: which Google services to switch on and why the module fails closed until every key is in. Being reconstructed with Cotter, 2026-08-03.)*
 
 **Module 6 · Monetization** — the funnel, offers/credits, the upsell ladder, show-the-wound-hold-the-fix.
-- `build-methods.md` #1 Set up a paid product.
+- `build-methods.md` #1 Set up a paid product — **owns the mechanics** (Product → Variant → Offer → Checkout → connect, plus the three traps). Read first.
+- *(open — `training-dashnex-deploy-a-module.md` **Parts I to M**, which **extend #1 and never repeat it**: the second product and the subscription case (`max_xray_runs`, one-time AND monthly), the CUSTOM checkout that #1 says to skip, every field on that form including the bump, and the images and descriptions steps #1 never mentions. Being reconstructed with Cotter, 2026-08-03.)*
 
 **Module 7 · Launch & deploy** — push→deploy→pull, live testing, polish last.
-- Modules: `training-dashnex-indexnow.md` (get the site found).
+- Modules: `training-dashnex-indexnow.md` (get the site found) · `training-dashnex-deploy-a-module.md` **Parts E to G** — push, the Master Payment Processing Agreement gate that only the account owner can clear, and **why "the page loaded" proves nothing on a DashNex app** (every address returns success, including nonsense ones, so the obvious check is a test that cannot fail).
 - *(dev-server-preview method — ON HOLD, pending DashNex Support on the TCS dev-server incident.)*
 
 **Module 8 · Selling it** — distribution > creation; the tool as a front door to a relationship; whitelabel/"sell shovels."

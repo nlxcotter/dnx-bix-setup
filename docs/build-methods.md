@@ -14,6 +14,7 @@
 ### 1 · Set up a paid product in DashNex — Product → Variant → Offer → Checkout → connect
 *Verified live 2026-07-02 — the full flow tested end-to-end with a real checkout overlay (Express pay, email pre-filled).*
 **Teaches → Module 6 (Monetization).**
+**⚠️ SCOPE, added 2026-08-03.** This method covers **the simplest working case: ONE product, a ONE-TIME price, and the auto-created default checkout.** That case is verified and correct. **It is not the whole surface, and two lines below read as advice when they are actually scope:** *"Bump → skip"* and *"use the default checkout, no need to make one."* **A funnel with an upsell does the opposite of both** (a custom checkout built from scratch, with the bump as the point rather than a later add-on), and a **subscription** needs a recurring **Reset Period** instead of `None`, plus its own second product and variable. **Follow this method for the mechanics. Do not read its simplifications as the only shape.**
 
 **What it does & why it matters.** It turns a dead "buy" button live. In DashNex a sale is just an **entitlement** — you build four things (a Product, a Variant, an Offer, a Checkout), copy **two IDs** into your app, and the button works. All clicks, no billing code. But miss one step or one hidden gotcha and the button just sits greyed out **with no error telling you why** — so follow the order, and watch the three traps at the bottom.
 
