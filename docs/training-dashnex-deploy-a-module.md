@@ -350,40 +350,161 @@ Xcavate needs exactly two, and it is worth knowing which **so that you are not s
 
 ---
 
-# PART H onward: what the curated method does NOT cover
+# PART H: The provider keys, on the provider's side
 
-**★ NOT YET CAPTURED, and deliberately narrower than it first looked.**
+**Covered in Part G is pasting the keys in. This is getting them in the first place.**
 
-**Do not read this section as the guide to selling a product on DashNex.** That guide already exists and is curated: **`build-methods.md` method 1, Product → Variant → Offer → Checkout → connect.** It teaches the four builds in order and carries the three traps that cost an hour each. **Read that first. This section extends it, it does not repeat it.**
+**Xcavate needs exactly two Google services switched on**, and knowing which saves you enabling things you get billed for and never use.
 
-**Why the distinction is enforced rather than polite.** Two documents teaching the same four steps drift apart the moment one is edited, and then one of them starts lying with authority. **The curated method owns the mechanics. This section owns only what that method does not reach.**
+- **Places API (New).** Finds the business and returns its details. **The word "New" matters**, because an older service with almost the same name exists and this does not use it.
+- **Geocoding API.** Turns the town a visitor types into map coordinates, **so that** the search covers the right area instead of the whole country. **Without this one the module refuses to run at all** rather than searching the wrong place.
 
-## What method 1 already gives you, so you know not to look for it here
+**In the Google Cloud console, the buttons show what will happen if you click them, not what is currently on.** A service showing a **Disable** button is already enabled. A service showing an **Enable** button is off. **This reads backwards to almost everyone the first time.**
 
-Creating the Product with type **Software**, adding the `max_reports` variable in snake_case, the Variant that carries the variable's **value**, the Offer that links product to price, the auto-created **default** checkout, and pasting the two IDs into the module admin where they validate on Save.
+**If your key is restricted to specific APIs, both of these have to be on that list**, or calls fail with a permission error even though the services themselves are enabled.
 
-**Its three traps, which are the hour-savers:** the product variable commits only on **Enter**; the variable's **name lives on the Product but its value lives on the Variant**, two screens for one idea; and **the Checkout ID has no "Copy ID" option**, it is the tail of the Copy-link URL.
+---
 
-## The genuine gaps, which is what Parts H onward will hold
+# PART I: What you are actually building, THREE products and SIX IDs
 
-| Part | The gap | Why method 1 does not cover it |
-|---|---|---|
-| **H** | **Provider API keys, the Google Cloud side.** Which services to switch on before you have a key to paste | Method 1 is about selling, not about wiring providers. **Teaches Module 5, not Module 6** |
-| **I** | **The SECOND product, and the subscription case.** Xcavate needs one product carrying `max_reports`. **X-Ray needs its own, carrying `max_xray_runs`, in both a one-time AND a monthly form**, which is four more IDs and a recurring reset period | Method 1 builds **one** product and states **Reset Period → None for a one-time buy**. It never covers a recurring one |
-| **J** | **The CUSTOM checkout.** Method 1 says the auto-created default checkout is fine and to skip the bump | **That is the opposite of what was actually built here.** A custom checkout was created from scratch, and the bump is the point rather than a later add-on |
-| **K** | **Every field on the custom checkout form:** timers, payment methods, express and address and phone toggles, the custom invoice name, bump pricing, custom tags, guarantee text and refund method, sales terms, footer disclaimer, discounts | Method 1 never opens this form. **It is the largest single gap** |
-| **L** | **Images.** Which surfaces ask for a graphic, at what size, and what belongs in it | Not mentioned anywhere in method 1 |
-| **M** | **Descriptions.** Which surfaces ask for copy, and which of them the buyer actually reads | Method 1 mentions **External description (optional)** once and moves on |
+**Read this before you create anything**, because the shape decides how many times you repeat the next four steps.
 
-**Plus the thing no artifact can hold: the ORDER it was actually done in, and what failed on the first attempt.** A finished admin screen shows the end state. It cannot show that a step fails silently when an earlier one was skipped, and that is precisely what a stranger following this dies on.
+The module sells three separate things. **Each one needs its own Product, its own Offer and its own Checkout**, and each hands the app two IDs.
 
-## Why this stays empty rather than guessed
+| # | What it sells | Quota variable | Reset period | Where the IDs go |
+|---|---|---|---|---|
+| 1 | The Xcavate full report | `max_reports` | **None**, one-time | `FULL_REPORT_PRODUCT_ID` + `FULL_REPORT_CHECKOUT_ID` |
+| 2 | X-Ray, a one-time pack of runs | `max_xray_runs` | **None**, fixed pack | `onetimeProductId` + `onetimeCheckoutId` |
+| 3 | X-Ray, a monthly subscription | `max_xray_runs` | **Monthly**, refills | `monthlyProductId` + `monthlyCheckoutId` |
 
-These steps were performed by the account owner without an observer. **Reconstructing them from the finished configuration would produce a document that is confidently wrong in the small places**, which is more dangerous than one that is obviously incomplete. It stays marked empty until it is walked through.
+**★ Read row 2 and row 3 again. Products 2 and 3 use the SAME quota variable name.** The only thing that makes one a subscription and the other a one-off pack is **the reset period**. That is the entire subscription mechanism: same quota, no reset means a fixed pack, monthly reset means it refills.
 
-## One structural question left open on purpose
+**Every ID starts blank, and blank means that tier's sales are simply off.** No ID pasted, button disabled, nothing sold. **A half-configured install cannot sell something it is unable to deliver**, which is deliberate and is the one thing here that fails safely.
 
-**Images and Descriptions may not be chapters at all.** They may be fields met three separate times, on three separate screens, inside H through K. **Whether they are steps or a checklist depends on how the admin presents them**, which the walkthrough settles. No shape is being forced on them in advance.
+---
+
+# PART J: Building each product, offer and checkout
+
+**Repeat all four steps below three times, once per row of the table above.**
+
+## J1. The Product
+
+**In DashNex, go to Products in the left sidebar, then click the Add product button.**
+
+- **Name it.** Internal only, no buyer sees it.
+- **Set Product type to Software.** Required, **so that** the product can carry a usage limit, which is what a credit is. Any other type cannot.
+- **In the Variables box, type the quota name in snake_case.** `max_reports` for the report product, `max_xray_runs` for **both** X-Ray products.
+- **⚠️ TRAP: you must press Return to lock the variable in.** On a desktop screen the field commits **only** on Return, because the plus button beside it is hidden on anything wider than a phone. **Typing the word and moving on does nothing, and the Create button will not even light up.** You know it took when the word jumps into a rounded chip and the box empties.
+- Description and Tag can stay blank. **Click Create product.**
+
+## J2. The Variant, where the quota gets its value
+
+**On the product's row, click the ⋮ menu, choose Manage Variants, then click Add variant.**
+
+- **⚠️ TRAP: the variable's NAME lives on the Product, but its VALUE lives on the Variant.** Two screens for one idea, and this is where most people stall, **so** expect it rather than hunting for a value field on the product screen.
+- **Name the variant and click Create. Then reopen it** via its ⋮ menu and **Edit**. A **Variables** section now appears showing your quota name.
+- **Set the value.** That number is how many credits one purchase grants.
+- **★ Set the Reset Period. This single field is the only thing separating a subscription from a pack.**
+  - Report product: **None**
+  - X-Ray one-time: **None**, a fixed pack of runs
+  - X-Ray monthly: **Monthly**, so the quota refills each period, which is the thing the subscriber is paying for
+- **Good news, and it removes something you would otherwise have to hold in your head.** As of 2026-08-04 the module's settings screen **enforces this**. If you paste the wrong X-Ray product into the wrong slot, **it tells you which of the two products you actually pasted and refuses to save.** You do not have to remember which ID was which.
+- **The one case it cannot judge, stated rather than hidden:** if a single product declares the runs quota **twice**, once refilling and once not, across different variants, it satisfies either slot and passes both. That is honest, because a product built that way genuinely could serve either tier. **The guard stops the confusable pair, not every possible misconfiguration.**
+- **Click Update variant.**
+- **If the Variables section is missing entirely**, the variable never stuck on the product. Go back and redo the Return trap in J1.
+- **Copy the Product ID now.** Products list, the row's ⋮ menu, **Copy ID**. Paste it somewhere you can find it, **so that** you are not hunting for six IDs at the end.
+
+## J3. The Offer
+
+**In DashNex, go to Offers in the left sidebar and create one.**
+
+- **Internal name** is yours alone. **Invoice name** appears on the buyer's receipt and on their card statement, **so make it something they will recognise six weeks later** rather than disputing it.
+- **External description shows at checkout and is customer-facing copy**, not a note to yourself.
+- **Pricing:** price type, currency, price. **For the monthly X-Ray this is where the recurring price lives, and it has to agree with the Monthly reset period you set on the variant.** A monthly price against a `None` reset sells a subscription that never refills.
+- **Items, then the ＋ Add item button, then pick your Product and its Variant.** **This link is what makes the money actually deliver the thing.** Skip it and the customer pays and receives nothing.
+- **Guarantee** is optional here and is configured properly on the checkout.
+- **Click Create.**
+
+## J4. The Checkout
+
+**Open the offer you just made and go to its Checkouts section.**
+
+- **DashNex auto-creates a default checkout** with Express pay already switched on. **For a simple one-time product that is genuinely enough.**
+- **⚠️ TRAP: there is no "Copy ID" for a checkout.** The row's ⋮ menu offers only **Preview** and **Copy link**. Click **Copy link**, then take **only the last segment of that address**, the part after `/checkouts/`. **Not the whole link.**
+
+---
+
+# PART K: The custom checkout, where the bump lives
+
+**★ NOT YET CAPTURED. The four items at the end of this doc name exactly what is missing.**
+
+**This is where a real funnel diverges from the simple case.** A default checkout was not used here. **A custom checkout was built from scratch and the order bump is the point of it**, not a later add-on.
+
+**What is known from the form itself**, captured while it was on screen: internal name, three timer modes, payment methods, express checkout and billing-address and phone toggles, custom invoice name, main offer pricing with a strikethrough, bump settings with their own pricing, four custom tag fields, a guarantee block with text and refund method, the look-and-feel block holding the featured graphic and all bullet copy, bump box colours, sales terms, footer disclaimer, and discounts.
+
+**What is not known and will not be invented:** which screen it is created from, what was entered in each field, where the bump is configured, whether the bump needs its own Offer and Product or attaches to an existing one, and what the customer sees in order from click to receipt.
+
+---
+
+# PART L and M: Images and descriptions
+
+**★ NOT YET CAPTURED.**
+
+Where product and offer images are uploaded, what dimensions survive, which descriptions are customer-facing rather than internal, and where each one actually surfaces on the buying page.
+
+**Open question, deliberately not decided:** these may not be steps at all. They may be fields met three separate times inside J and K. **How the admin presents them settles it**, so no shape is being forced in advance.
+
+---
+
+# PART N: Connecting the six IDs, and the two things that will not catch you
+
+**In your live app, sign in as an administrator and open the module's settings from the left sidebar.** Paste each Product ID and each Checkout ID into its matching field and save.
+
+**Each field validates on Save**, so a typo is caught by you rather than by a customer at the till:
+- A bad product ID returns **"No product found with that ID."**
+- A product missing its quota returns **"That product has no `max_reports` quota, pick the report product."**
+- A bad checkout ID returns **"No checkout found with that ID."**
+- The quota may live on the product **or** on any of its variants. Both are accepted.
+
+**Both fields flip to Configured and the button goes live.**
+
+## ★ Two blind spots on this screen, and both are money paths
+
+**Blind spot one: the checkout check confirms the checkout EXISTS. It does not check what it SELLS.** Straight from the code that runs it:
+
+> *"Confirm the checkout ID is a real checkout (catches a typo'd/invalid ID). We deliberately do NOT inspect what the checkout's offer sells, pairing the right checkout to the report product is the admin's call."*
+
+**So a real, valid checkout ID that sells the wrong thing saves clean and shows Configured.**
+
+**Blind spot two: FIXED 2026-08-04, and recorded here because the reason it existed is the lesson.**
+
+The product check used to prove only that a quota with the **right name** was present. **Both X-Ray products carry the same name, `max_xray_runs`**, and the reset period, the only field telling the two tiers apart, was never read. **The two Product IDs were interchangeable and both slots saved green**, which cost money in both directions: a subscriber billed monthly against a quota that never refilled, or a single payment refilling forever.
+
+**The screen now reads the reset period and judges each product against the slot it is being pasted into.** Paste the wrong one and it names which product you actually pasted and refuses to save. **Tested against both crossed cases before shipping.**
+
+**Why it is left written down instead of quietly deleted:** the check that failed was the one that *looked* strict. An operator who had just been refused for a missing quota reasonably concluded the screen was checking their work, and it then waved through the most confusable pair in the whole configuration. **A validation that is right about the easy case and silent about the hard one is worse than no validation, because it buys trust it has not earned.**
+
+## ★ Therefore, and this is a required step rather than a suggestion
+
+**Six green fields is still not proof that anything works**, even with the tier guard in place. **The guard covers the products. Nothing covers the checkouts**, and blind spot one above is unchanged and deliberate: a real checkout ID selling the wrong thing saves clean.
+
+**Before you send a single human being to your site, buy each of the three tiers yourself.** Real card, real checkout, all the way to the receipt. **Then confirm the credit actually landed in the account.**
+
+**That is the only test that means anything**, and it is twenty minutes against a failure that charges people and delivers nothing while telling you everything is fine.
+
+**What changed and what did not, so this step is not misread as optional now:**
+- **Products: guarded.** The wrong X-Ray product in the wrong slot is refused at save.
+- **Checkouts: not guarded, by design.** Pairing a checkout to the right tier is still entirely yours, and nothing will catch you.
+- **So test-buy is still required.** It is now the mitigation for the checkout gap rather than for both.
+
+---
+
+# ★ The four things still missing, and only the account owner has them
+
+1. **The custom checkout form, field by field**
+2. **The bump configuration**, including whether it needs its own Offer and Product
+3. **Images and descriptions**, where they live and where they surface
+4. **What failed on the first attempt**, anywhere in Parts I to M. **No artifact holds this**, and it is the part a stranger following this guide dies on.
 
 ---
 
