@@ -72,7 +72,7 @@ In a data-driven build (collect → report → collect → report), the subtle k
 
 **Pass/fail bar:** if a distractible, non-technical person — tired, half-paying-attention — can follow it without panicking or guessing, it ships. Anything less, rewrite. *(Worked demonstration: the OAuth walkthrough in `training-dashnex-contacts.md` §C7.)* **This is the protocol that stops DashNex onboarding from bleeding people at the setup gate.**
 
-## ★ Core teaching FRAMEWORK: expectation is the only measuring instrument (Cotter, 2026-08-18)
+## ★ Core teaching FRAMEWORK: "Set It, Meet It, or Say So" (Cotter, named 2026-08-18)
 
 **Teachable-authorized by Cotter the day it was built: "this WHOLE thing... TEACHABLE."** Captured here, not developed. **Full text lives in `canon/working-with-cotter.md` and that copy governs. Do not duplicate it here.**
 
@@ -86,7 +86,7 @@ In a data-driven build (collect → report → collect → report), the subtle k
 
 **Where it teaches:** **Client-Teachable AND PM-teachable.** The bench walkthrough (set expectation at intake → test reported-versus-observed → progress along the stated path → the instant new data invalidates the estimate, stop and open a new conversation) **is a complete lesson on its own** and it is how an owner stops losing customers to surprise invoices.
 
-**⚠️ Cotter names the lesson, not the folder. The title above is a placeholder and is his to replace.**
+**★ NAMED BY COTTER, 2026-08-18: "Set It, Meet It, or Say So."** His words on it: *"That's the whole outline in five words."* **The third clause is the one that carries the lesson.** *Or say so* is the part everyone skips, and putting it in the title means the lesson cannot be taught without teaching it.
 
 ## ★ THE SPINE — the Day 1→8 module ladder (every teachable files under a rung)
 
@@ -125,7 +125,7 @@ In a data-driven build (collect → report → collect → report), the subtle k
 **Module 9 · Case study** — the real before/after (TCS) as proof.
 - Source: `tcs-rebuild-cs.md` · `airi-progress-report.md` · the TCS AI-visibility before/after captures.
 
-**Cross-cutting doctrine (every module):** the GNAT-Standard house style · the threat-triage algorithm · hedging-vs-rigor · **the expectation framework** (all four ★ above).
+**Cross-cutting doctrine (every module):** the GNAT-Standard house style · the threat-triage algorithm · hedging-vs-rigor · **"Set It, Meet It, or Say So"** (all four ★ above).
 
 **Client-Teachable spillovers logged** (owner-course language, not just PM build-knowledge): blog-article → Module 8 · InstraChat "your site is the bot's brain" + "lock what it must never say in Q&A" → Module 5. Written up as owner modules when the gates open.
 
