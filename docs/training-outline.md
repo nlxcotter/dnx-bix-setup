@@ -72,6 +72,22 @@ In a data-driven build (collect → report → collect → report), the subtle k
 
 **Pass/fail bar:** if a distractible, non-technical person — tired, half-paying-attention — can follow it without panicking or guessing, it ships. Anything less, rewrite. *(Worked demonstration: the OAuth walkthrough in `training-dashnex-contacts.md` §C7.)* **This is the protocol that stops DashNex onboarding from bleeding people at the setup gate.**
 
+## ★ Core teaching FRAMEWORK: expectation is the only measuring instrument (Cotter, 2026-08-18)
+
+**Teachable-authorized by Cotter the day it was built: "this WHOLE thing... TEACHABLE."** Captured here, not developed. **Full text lives in `canon/working-with-cotter.md` and that copy governs. Do not duplicate it here.**
+
+**Why it belongs in the curriculum rather than only in canon: the client-facing version is his own bench process, and every owner in the audience already half-does it badly.** It is the single most transferable thing in the program because it is not a DashNex skill, a marketing skill, or a computer skill. His scope: *"cars, vacuum cleaners, computers, sinks, drains, plumbing, water supply, air supply, rockets, airplanes."*
+
+**The shape, in one paragraph, so a reader of this spine knows what they are reaching for:**
+
+**Four outcomes, and two of them are FINE**, which is the half everyone drops. **Four stages:** Assessment, Engagement, Verification, Troubleshooting. **It runs in two directions:** backward it diagnoses a disappointment that already happened, forward it prevents one by stating the expectation before any work begins. **Cell four is Pandora's Box**, everything that could go wrong and hasn't, and the rule there is a hard refusal to START, because any stopping point inside an infinite regress is arbitrary and only the threshold is principled.
+
+**★ The owner-facing payload, and this is the part that sells:** *"the intention IS the expectation"*, and **integrity is structural rather than moral** — two things, what you said and what you did, integrated into one. **You adjust your actions to meet the expectation you set. You revise the estimate only on a real limit of ability. The expectation itself never moves.** And you re-contract **the moment** the path changes, not when you deliver.
+
+**Where it teaches:** **Client-Teachable AND PM-teachable.** The bench walkthrough (set expectation at intake → test reported-versus-observed → progress along the stated path → the instant new data invalidates the estimate, stop and open a new conversation) **is a complete lesson on its own** and it is how an owner stops losing customers to surprise invoices.
+
+**⚠️ Cotter names the lesson, not the folder. The title above is a placeholder and is his to replace.**
+
 ## ★ THE SPINE — the Day 1→8 module ladder (every teachable files under a rung)
 
 > **This is the organizing law of this folder.** A teachable is filed by the **rung of this ladder it teaches** — not by file-type, and not by the GM's choice of bucket. `build-methods.md` is raw source that FEEDS these rungs (each of its methods carries a `Teaches →` line); the `training-*.md` files are drafted modules; the ★ principles above are cross-cutting doctrine. When new teachable material lands, the only question is *"which rung does this teach?"* — then it's logged here under that rung. **Capture only** — building or selling the modules stays gated per the top of this file.
@@ -109,7 +125,7 @@ In a data-driven build (collect → report → collect → report), the subtle k
 **Module 9 · Case study** — the real before/after (TCS) as proof.
 - Source: `tcs-rebuild-cs.md` · `airi-progress-report.md` · the TCS AI-visibility before/after captures.
 
-**Cross-cutting doctrine (every module):** the GNAT-Standard house style · the threat-triage algorithm · hedging-vs-rigor (all three ★ above).
+**Cross-cutting doctrine (every module):** the GNAT-Standard house style · the threat-triage algorithm · hedging-vs-rigor · **the expectation framework** (all four ★ above).
 
 **Client-Teachable spillovers logged** (owner-course language, not just PM build-knowledge): blog-article → Module 8 · InstraChat "your site is the bot's brain" + "lock what it must never say in Q&A" → Module 5. Written up as owner modules when the gates open.
 
