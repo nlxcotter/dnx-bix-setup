@@ -180,6 +180,35 @@
 
 **The rule:** a DashNex chatbot goes live only when the agent is **both Active AND Chat-Bubble-enabled** AND the loader actually ships to the page — verify with a live `enabled-agent` check **and** a grep of the live HTML, never the dashboard alone.
 
+### 8 · Give someone admin access on a DashNex app — and why the dashboard lies about it
+*Found by the AAR PM 2026-09-14 on a live client's own computer, verified independently by the GM. Filed by the GM per propose-not-write.*
+**Teaches → Module 5 (Wiring real services).**
+
+**What it does & why it matters.** You add a person as **Admin** on the DashNex Team page. They log in. **They get an ordinary user's menu.** No error, no warning, nothing in a log. This is the single most confusing permissions failure on the platform, and it is not a bug in your code.
+
+**The cause: there are TWO role stores and they do not sync.**
+
+| Where | What it actually controls |
+|---|---|
+| **Settings → Team** | **Business membership.** Lets a person into the admin area at all. |
+| **`users.roles` in your app's D1** | **App identity.** The *only* thing `@dashnex/auth`'s `hasRole()` reads. |
+
+**Adding an Admin on the Team page does not write `admin` into `users.roles`.** So the platform lets them in the front door and your app then filters them down to a trainee. Both systems are working exactly as built. Neither one is wrong on its own.
+
+**⚠️ The verification, and note that the obvious check is the one that fails.** "Look at the Team page" will show you `Admin / Active` and tell you nothing:
+```
+npx dashnex db execute --remote --command "select username, roles from users;"
+```
+**That produces the number the dashboard cannot.** Anyone who checks only the dashboard will report a correctly provisioned admin and be wrong.
+
+**⚠️ You cannot fix this from code, so do not go looking.** Verified across every installed `@dashnex` module: `teamMember`, `getMembers`, `getTeam`, `businessMembers` and `listMembers` do not exist, and `getBusiness*` returns only profile, currencies and API base. **An app cannot read its own Team page**, so it can neither repair this nor warn about it accurately.
+
+**The fix: set app roles from inside your own app.** Build a small owner-only access screen that writes `users.roles` directly. Two guardrails that are not optional: **only an owner may write**, and **nobody may remove their own owner role** (otherwise the last owner can lock the whole business out of its own admin).
+
+**★ And put the explanation ON that screen.** One short line saying that DashNex Team membership and app roles are separate, and that this screen controls the second one. **The person who needs it is standing right there, confused, and will never read your documentation.**
+
+**The rule:** on DashNex, **business membership and app identity are two different things.** Grant both, and verify the one that enforces.
+
 ---
 
 ## Platform facts and limits (constraints to design around, not methods)
